@@ -1,0 +1,82 @@
+﻿<html>
+
+<head>
+  <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>文件格式：书店</title>
+  <link rel="stylesheet" href="stylesheet/stylesheet.css">
+</head>
+
+<body>
+  <table class="container" cellspacing="0">
+    <tr>
+      <td style="padding:0px; margin:0px;">
+        <div class="overlay_top">
+          <div class="overlay_bottom">
+            <table class="container" cellspacing="0">
+              <tr>
+                <td class="container_corner_upper_left"></td>
+                <td class="container_top">
+                  <div style="padding-left:130px; position:relative; top:10px;"><a href="Introduction.html"
+                      class="menulink">主页</a> |
+                    <a href="eula.html" class="menulink">许可协议</a> |
+                    <a href="changelog.html" class="menulink">更新日志</a> |
+                    <a href="features.html" class="menulink">功能</a> |
+                    <a href="todo.html" class="menulink">项目状态</a> |
+                    <a href="toc.techdoc.html" class="menulink">技术文档</a>
+                  </div>
+                </td>
+                <td class="container_corner_upper_right"></td>
+              </tr>
+              <tr>
+                <td class="container_left"></td>
+                <td valign="top">
+                  <div><img class="pagetitle" src="Images/menu_large/techdoc.png"></div>
+                  <div>
+                    <h2>文件格式：书店</h2>
+                    <p>书店文件格式用于配置Npc功能'技能大师对话'，由技能大师npc使用。</p>
+                    <code><pre class="code">&lt;?xml version="1.0" encoding="utf-8" ?&gt;
+&lt;!DOCTYPE shop [
+	&lt;!ELEMENT shop (item*)&gt;
+	&lt;!ELEMENT item CDATA #REQUIRED&gt;
+]&gt;
+&lt;shop&gt;
+	&lt;item&gt;16056&lt;/item&gt;
+	&lt;item&gt;16057&lt;/item&gt;
+	&lt;item&gt;16058&lt;/item&gt;
+	&lt;item&gt;16066&lt;/item&gt;
+	&lt;item&gt;16067&lt;/item&gt;
+	&lt;item&gt;16068&lt;/item&gt;
+	&lt;item&gt;16080&lt;/item&gt;
+	&lt;item&gt;16081&lt;/item&gt;
+	&lt;item&gt;16082&lt;/item&gt;
+&lt;/shop&gt;
+</pre></code>
+
+                    <p>
+                      在上述示例中，您可以看到配置'书店对话'元素的内部文件格式。这将显示一个普通的书店商店，通常用于出售技能书，由技能大师npc使用。它类似于商店列表，但书店仅提供无限量的库存。这意味着在商店列表中使用的数量属性将被忽略。
+                    </p>
+                    <p>书店会自动按职业筛选物品。书店可以销售除了技能书之外的其他物品，只要列表中的某个职业可以使用该物品。</p>
+                    <p>要更改物品在商店中的售价，您需要修改客户端文件中的items.dat。我们建议不要修改客户端，因为这样会使服务器的更新变得非常复杂。</p>
+
+                  </div>
+                  <div style="height:70px; width:100%;"><a href="#" class="footerlink">回到顶部</a></div>
+                </td>
+                <td class="container_right"></td>
+              </tr>
+              <tr>
+                <td class="container_corner_lower_left"></td>
+                <td class="container_bottom"></td>
+                <td class="container_corner_lower_right"></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td class="page_footer"><img src="images/logo-rev-low.png"></td>
+    </tr>
+  </table>
+</body>
+
+</html>

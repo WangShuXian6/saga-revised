@@ -1,0 +1,262 @@
+<html>
+
+<head>
+	<title>许可证</title>
+	<style>
+		BODY {
+			padding: 20px;
+		}
+
+		BODY,
+		DIV,
+		P,
+		TD {
+			font-size: 1em;
+			color: rgb(83, 100, 130);
+		}
+
+		H1 {
+			color: #000000;
+			font-size: 20px;
+		}
+
+		H2 {
+			color: #000000;
+			font-size: 16px;
+		}
+
+		CODE {
+			padding: 3px;
+			background-color: #FFFFFF;
+			border: 1px solid #C9D2D8;
+			font-size: 1em;
+			margin-bottom: 10px;
+			display: block;
+			font: 0.9em Monaco, "Andale Mono", "Courier New", Courier, mono;
+			line-height: 1.3em;
+		}
+
+		.paragraph_menu {
+			background: rgb(205, 220, 235);
+			padding: 10px;
+		}
+
+		.paragraph {
+			background: rgb(236, 243, 247);
+			padding: 10px;
+		}
+
+		a:link {
+			color: #105289;
+			text-decoration: none;
+		}
+
+		a:visited {
+			color: #105289;
+			text-decoration: none;
+		}
+
+		a:hover {
+			color: #D31141;
+			text-decoration: underline;
+		}
+
+		a:active {
+			color: #368AD2;
+			text-decoration: none;
+		}
+
+		.top {
+			text-align: right;
+		}
+
+		ol {
+			color: black;
+			font-size: 13px;
+			line-height: 1.3em;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>配置：</h1>
+	<p>
+		本文档定义了Saga emu配置的可能用法。</p>
+
+
+	<h2>段落</h2>
+	<div class="paragraph_menu">
+		<p>
+		<ol>
+			<li><a href="#Extension">类型扩展</a></li>
+			<li><a href="#Addition">Saga.Factory.Addition</a></li>
+			<li><a href="#Exptable">Saga.Factory.Exptable</a></li>
+			<li><a href="#Itemdrops">Saga.Factory.Itemdrops</a></li>
+			<li><a href="#Items">Saga.Factory.Items</a></li>
+			<li><a href="#Portals">Saga.Factory.Portals</a></li>
+			<li><a href="#Supply">Saga.Factory.Supply</a></li>
+			<li><a href="#Warps">Saga.Factory.Warps</a></li>
+			<li><a href="#Spells">Saga.Factory.Spells</a></li>
+			<li><a href="#Weaponary">Saga.Factory.Weaponary</a></li>
+			<li><a href="#Zone">Saga.Factory.Zone</a></li>
+			<li><a href="#SpawnMobs">Saga.Factory.SpawnMobs</a></li>
+			<li><a href="#SpawnWorldObjects">Saga.Factory.SpawnWorldObjects</a></li>
+			<li><a href="#Scripting">Saga.Manager.Scripting</a></li>
+			<li><a href="#Quest">Saga.Manager.Quest</a></li>
+		</ol>
+		</p>
+	</div>
+
+	<h2 id="Extension">类型扩展：</h2>
+	<div class="paragraph">
+		<p>
+			默认情况下，Saga使用默认的文件格式xml或csv。但有时你可能有自己的文件格式，或者想添加加密功能。不要担心，Saga支持通过脚本扩展类型，你可以编写自定义覆盖类型并将其用作服务器的基础。<br />
+			<br />
+			你可以在配置文件中使用"type"参数来指定类型重载。
+		</p>
+		<b> 示例： </b>
+		<pre><code>&lt;Saga.Factory.Addition type="Plugins.ExtendedAddition"&gt;
+	&lt;Files&gt;
+		&lt;add path="../Data/addition.csv" /&gt;
+	&lt;/Files&gt;
+&lt;/Saga.Factory.Addition&gt;</code></pre>
+
+	</div>
+
+
+
+
+	<h2 id="Addition">Saga.Factory.Addition。</h2>
+	<div class="paragraph">
+		<b>概述</b>
+		<p>
+			Addition工厂加载大量数据，定义某些物品和技能对玩家状态的副作用。大多数增益/减益效果和物品都以此为基础。Addition工厂默认情况下没有其他选项，除了分片文件加载。
+		</p>
+		<b> 配置： </b>
+		<pre><code>
+&lt;configuration&gt;
+	&lt;configSections&gt;
+		&lt;section name="Saga.Factory.Addition" type="Configuration.Factory_Addition, Saga.Map"/&gt;		
+	&lt;/configSections&gt;
+	
+	&lt;!-- 这里是其他配置选项 --&gt;
+	
+	&lt;Saga.Factory.Addition&gt;
+		&lt;Files&gt;
+			&lt;add path="../Data/addition.csv" /&gt;
+		&lt;/Files&gt;
+	&lt;/Saga.Factory.Addition&gt;
+&lt;/configuration&gt;	
+</code></pre>
+	</div>
+
+
+
+	<h2 id="Exptable">Saga.Factory.Exptable。</h2>
+	<div class="paragraph">
+		<b>概述</b>
+		<p>
+			经验表加载数据，定义每个等级所需的经验值。请注意，经验表与客户端一起工作，如果经验表有误，可能会导致游戏体验不佳。
+		</p>
+		<b>附加参数</b>
+		<p>
+			<i>cexp</i> 你可以使用cexp来设置速率修正符。这相当于exp = exp_reward * rate; <br />
+			<i>jexp</i> 你可以使用jexp来设置速率修正符。这相当于exp = exp_reward * rate; <br />
+			<i>wexp</i> 你可以使用wexp来设置速率修正符。这相当于exp = exp_reward * rate; <br />
+		</p>
+		<b> 配置： </b>
+		<pre><code>
+&lt;configuration&gt;
+	&lt;configSections&gt;
+		&lt;section name="Saga.Factory.Exptable" type="Configuration.Factory_Exptable, Saga.Map"/&gt;		
+	&lt;/configSections&gt;
+	
+	&lt;!-- 这里是其他配置选项 --&gt;
+	
+	&lt;Saga.Factory.Exptable [cexp="<i>整数</i>"] [jexp="<i>整数</i>"] [wexp="<i>整数</i>"]&gt;
+		&lt;Files&gt;
+			&lt;add path="../Data/expierence.csv" /&gt;
+		&lt;/Files&gt;
+	&lt;/Saga.Factory.Exptable&gt;
+&lt;/configuration&gt;	
+</code></pre>
+	</div>
+
+	<h2 id="Exptable">Saga.Factory.Itemdrops。</h2>
+	<div class="paragraph">
+		<b>概述</b>
+		<p>
+			物品掉落管理器不是一个关键组件。它被添加的目的是让测试服务器能够快速修改物品掉落，并按需重新加载。也可以作为通用数据库提取的一部分，使我们保持数据的最新。
+		</p>
+		<b> 配置： </b>
+		<pre><code>
+&lt;configuration&gt;
+	&lt;configSections&gt;
+		&lt;section name="Saga.Factory.Itemdrops" type="Configuration.Factory_Itemdrops, Saga.Map"/&gt;		
+	&lt;/configSections&gt;
+	
+	&lt;!-- 这里是其他配置选项 --&gt;
+	
+	&lt;Saga.Factory.Itemdrops&gt;
+		&lt;Files&gt;
+			&lt;add path="../Data/item_drops.csv" /&gt;
+		&lt;/Files&gt;
+	&lt;/Saga.Factory.Itemdrops&gt;
+&lt;/configuration&gt;	
+</code></pre>
+	</div>
+
+
+	<h2 id="Exptable">Saga.Factory.Items</h2>
+	<div class="paragraph">
+		<b>概述</b>
+		<p>
+			Item工厂是一个非常重要的类。它包含所有物品的信息：拍卖的类别、售价、物品是否可交易，及其适用于哪些职业。
+		</p>
+		<b> 配置： </b>
+		<pre><code>
+&lt;configuration&gt;
+	&lt;configSections&gt;
+		&lt;section name="Saga.Factory.Items" type="Configuration.Factory_Items, Saga.Map"/&gt;		
+	&lt;/configSections&gt;
+	
+	&lt;!-- 这里是其他配置选项 --&gt;
+	
+	&lt;Saga.Factory.Items&gt;
+		&lt;Files&gt;
+			&lt;add path="../Data/item_data.xml" reader="xml"  /&gt;
+		&lt;/Files&gt;
+	&lt;/Saga.Factory.Items&gt;
+&lt;/configuration&gt;	
+</code></pre>
+	</div>
+
+
+
+
+	<h2 id="Exptable">Saga.Factory.Portals</h2>
+	<div class="paragraph">
+		<b>概述</b>
+		<p>
+			门户工厂包含地图上的所有传送门。传送门定义在地图上，作用是让玩家跳跃到其他区域或特殊区域。
+		</p>
+		<b> 配置： </b>
+		<pre><code>
+&lt;configuration&gt;
+	&lt;configSections&gt;
+		&lt;section name="Saga.Factory.Portals" type="Configuration.Factory_Portals, Saga.Map"/&gt;		
+	&lt;/configSections&gt;
+	
+	&lt;!-- 这里是其他配置选项 --&gt;
+	
+	&lt;Saga.Factory.Portals&gt;
+		&lt;Files&gt;
+			&lt;add path="../Data/portals.csv" /&gt;
+		&lt;/Files&gt;
+	&lt;/Saga.Factory.Portals&gt;
+&lt;/configuration&gt;	
+</code></pre>
+	</div>
+</body>
+
+</html>

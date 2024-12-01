@@ -1,0 +1,89 @@
+﻿<html>
+
+<head>
+  <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>文件格式：掉落收集</title>
+  <link rel="stylesheet" href="stylesheet/stylesheet.css">
+</head>
+
+<body>
+  <table class="container" cellspacing="0">
+    <tr>
+      <td style="padding:0px; margin:0px;">
+        <div class="overlay_top">
+          <div class="overlay_bottom">
+            <table class="container" cellspacing="0">
+              <tr>
+                <td class="container_corner_upper_left"></td>
+                <td class="container_top">
+                  <div style="padding-left:130px; position:relative; top:10px;"><a href="Introduction.html"
+                      class="menulink">主页</a> |
+                    <a href="eula.html" class="menulink">许可协议</a> |
+                    <a href="changelog.html" class="menulink">更新日志</a> |
+                    <a href="features.html" class="menulink">功能</a> |
+                    <a href="todo.html" class="menulink">项目状态</a> |
+                    <a href="toc.techdoc.html" class="menulink">技术文档</a>
+                  </div>
+                </td>
+                <td class="container_corner_upper_right"></td>
+              </tr>
+              <tr>
+                <td class="container_left"></td>
+                <td valign="top">
+                  <div><img class="pagetitle" src="Images/menu_large/techdoc.png"></div>
+                  <div>
+                    <h2>文件格式：掉落收集</h2>
+                    <p>掉落收集文件格式用于配置NPC的标准掉落物（非任务掉落）。掉落收集文件位于~data/loot/{npcid}.xml。</p>
+                    <code><pre class="code">&lt;?xml version="1.0" encoding="utf-8" ?&gt;
+&lt;!DOCTYPE lootitems [
+	&lt;!ELEMENT lootitems (item*)&gt;
+	&lt;!ELEMENT item CDATA #REQUIRED&gt;
+	&lt;!ATTLIST item rate CDATA #REQUIRED&gt;
+]&gt;
+&lt;lootitems&gt;
+   &lt;item rate="3876"&gt;2020001&lt;/item&gt;
+   &lt;item rate="989"&gt;2020002&lt;/item&gt;
+   &lt;item rate="797"&gt;9504&lt;/item&gt;
+   &lt;item rate="172"&gt;530432&lt;/item&gt;
+   &lt;item rate="115"&gt;450027&lt;/item&gt;
+   &lt;item rate="144"&gt;500196&lt;/item&gt;
+   &lt;item rate="365"&gt;51500004&lt;/item&gt;
+   &lt;item rate="144"&gt;100109&lt;/item&gt;
+   &lt;item rate="96"&gt;350014&lt;/item&gt;
+   &lt;item rate="96"&gt;1700069&lt;/item&gt;
+   &lt;item rate="480"&gt;9493&lt;/item&gt;
+   &lt;item rate="144"&gt;450144&lt;/item&gt;
+   &lt;item rate="427"&gt;9449&lt;/item&gt;
+   &lt;item rate="144"&gt;100112&lt;/item&gt;
+   &lt;item rate="28"&gt;2735&lt;/item&gt;
+&lt;/lootitems&gt;
+</pre></code>
+
+                    <p>在上面的示例中，您可以看到用于配置怪物默认掉落物的内部文件格式。请注意，这里不包括与任务相关的掉落物，这意味着任何涉及任务物品的掉落应该被过滤掉。</p>
+                    <p>
+                      与任务相关的掉落物通常在任务中激活，一旦任务结束，由任务引起的附加掉落物将被停用。这使得怪物有两个独立的掉落物，一个是日常掉落物，另一个是任务掉落物。将这两种掉落集合清晰地分开有其好处：更新怪物掉落物/掉落比例时可以保持任务掉落物不变，反之亦然，在没有其他信息可用时，添加怪物的任务交互更为容易。
+                    </p>
+                    <p>掉落比例是基于一个介于0到10000之间的数字。如果随机数小于或等于指定的掉落比例，则该物品将掉落。因此，掉落比例越高，物品掉落的机会越大。</p>
+
+                  </div>
+                  <div style="height:70px; width:100%;"><a href="#" class="footerlink">顶部</a></div>
+                </td>
+                <td class="container_right"></td>
+              </tr>
+              <tr>
+                <td class="container_corner_lower_left"></td>
+                <td class="container_bottom"></td>
+                <td class="container_corner_lower_right"></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td class="page_footer"><img src="images/logo-rev-low.png"></td>
+    </tr>
+  </table>
+</body>
+
+</html>

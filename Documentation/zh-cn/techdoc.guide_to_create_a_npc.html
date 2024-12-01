@@ -1,0 +1,149 @@
+﻿<html>
+
+<head>
+  <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>指南：创建自定义NPC</title>
+  <link rel="stylesheet" href="stylesheet/stylesheet.css">
+</head>
+
+<body>
+  <table class="container" cellspacing="0">
+    <tr>
+      <td style="padding:0px; margin:0px;">
+        <div class="overlay_top">
+          <div class="overlay_bottom">
+            <table class="container" cellspacing="0">
+              <tr>
+                <td class="container_corner_upper_left"></td>
+                <td class="container_top">
+                  <div style="padding-left:130px; position:relative; top:10px;">
+                    <a href="Introduction.html" class="menulink">主页</a> |
+                    <a href="eula.html" class="menulink">Eula</a> |
+                    <a href="changelog.html" class="menulink">更新日志</a> |
+                    <a href="features.html" class="menulink">功能</a> |
+                    <a href="todo.html" class="menulink">项目状态</a> |
+                    <a href="toc.techdoc.html" class="menulink">技术文档</a>
+                  </div>
+                </td>
+                <td class="container_corner_upper_right"></td>
+              </tr>
+              <tr>
+                <td class="container_left"></td>
+                <td valign="top">
+                  <div><img class="pagetitle" src="Images/menu_large/techdoc.png"></div>
+                  <div>
+                    <h2>指南：创建自定义NPC</h2>
+                    <p>NPC功能是NPC的构建模块。每个NPC都可以选择包含一个或多个NPC功能。目前，我们尚未支持创建NPC功能，但我们提供了一些现有NPC功能的列表。</p>
+                    <code><pre class="code">Saga.Npc.Functions.BlackSmith			
+Saga.Npc.Functions.EverydayConversation	
+Saga.Npc.Functions.CatheleyaConversation	
+Saga.Npc.Functions.SkillMasterConversation
+Saga.Npc.Functions.WarperConversation	
+Saga.Npc.Functions.ShopConversation		
+Saga.Npc.Functions.AuctionConversation	
+Saga.Npc.Functions.KaftraConversation	
+Saga.Npc.Functions.LocationConversation	
+Saga.Npc.Functions.TraderConversation	
+Saga.Npc.Functions.QuestConversation
+</pre></code>
+
+                    <code><pre class="code">Blacksmith 
+此功能将在指定的NPC上添加一个铁匠图标，并显示子菜单。
+子菜单：武器命名、武器更换、装备修理。
+
+EverydayConversation 
+此功能将为NPC添加日常对话（每个NPC都应该包含此功能）。
+
+CatheleyaConversation
+此功能将为NPC添加Catheleya按钮和子菜单。
+子菜单：治疗、开店。
+
+SkillMasterConversation
+此功能将为NPC添加技能大师按钮和子菜单。
+子菜单：更改职业、特殊技能、书店。
+
+WarperConversation
+此功能将为NPC添加传送按钮。
+子菜单：通过配置warpers/{npcid}.xml进行配置。
+
+ShopConversation
+此功能将为NPC添加商店按钮。
+商店：通过配置shops/{npcid}.xml进行配置。
+
+AuctionConversation
+此功能将为NPC添加拍卖按钮和子菜单。
+子菜单：打开拍卖。
+
+KaftraConversation
+此功能将为NPC添加Kaftra按钮、事件按钮、Kaftra子菜单。
+子菜单：保存位置、仓库。
+
+LocationConversation
+此功能将为NPC添加位置按钮和子菜单。位置引导是新类型的NPC，它们的功能已经实现。
+子菜单：通过配置Guides/{npcid}.xml进行配置。
+
+TraderConversation
+此功能将为NPC添加交易商按钮和子菜单。
+子菜单：通过配置traders/{npcid}.xml进行配置。
+
+QuestConversation
+此功能将使所选的NPC成为任务敏感型。所有NPC都应该包含此功能，否则无法与它们进行任何任务。
+</pre></code>
+
+                    <p>
+                      以下代码展示了如何构建一个铁匠NPC。我们通过大约20行代码就完成了NPC的创建，可以无限次重用。确保你的类继承自'BaseNPC'。按钮的显示顺序将取决于功能的注册顺序，因此假设你首先注册铁匠功能，然后是日常对话，你最终会先显示铁匠按钮，再显示日常对话按钮。（从左到右）
+                    </p>
+                    <code><pre class="code">using Saga.Npc.Functions;
+using Saga.Structures;
+
+namespace Saga.Templates
+{
+
+    public class BlackSmith : BaseNPC
+    {
+
+        #region 基础成员
+
+        protected override void Initialize()
+        {            
+            NpcFunction.Create&lt;Saga.Npc.Functions.EverydayConversation&gt;(this);
+            NpcFunction.Create&lt;Saga.Npc.Functions.BlackSmith&gt;(this);
+            NpcFunction.Create&lt;Saga.Npc.Functions.ShopConversation&gt;(this);
+            NpcFunction.Create&lt;Saga.Npc.Functions.TraderConversation&gt;(this);
+            NpcFunction.Create&lt;Saga.Npc.Functions.QuestConversation&gt;(this);
+        }
+
+        #endregion
+
+        #region 构造函数/析构函数
+
+        ~BlackSmith() { }
+        public BlackSmith() { }
+
+        #endregion
+
+    }
+}</pre></code>
+
+                  </div>
+                  <div style="height:70px; width:100%;"><a href="#" class="footerlink">顶部</a></div>
+                </td>
+                <td class="container_right"></td>
+              </tr>
+              <tr>
+                <td class="container_corner_lower_left"></td>
+                <td class="container_bottom"></td>
+                <td class="container_corner_lower_right"></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td class="page_footer"><img src="images/logo-rev-low.png"></td>
+    </tr>
+  </table>
+</body>
+
+</html>

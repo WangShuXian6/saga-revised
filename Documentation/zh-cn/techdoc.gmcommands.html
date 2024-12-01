@@ -1,0 +1,153 @@
+﻿<html>
+
+<head>
+  <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>命令：gmcommands 参考</title>
+  <link rel="stylesheet" href="stylesheet/stylesheet.css">
+</head>
+
+<body>
+  <table class="container" cellspacing="0">
+    <tr>
+      <td style="padding:0px; margin:0px;">
+        <div class="overlay_top">
+          <div class="overlay_bottom">
+            <table class="container" cellspacing="0">
+              <tr>
+                <td class="container_corner_upper_left"></td>
+                <td class="container_top">
+                  <div style="padding-left:130px; position:relative; top:10px;"><a href="Introduction.html"
+                      class="menulink">首页</a> |
+                    <a href="eula.html" class="menulink">Eula</a> |
+                    <a href="changelog.html" class="menulink">更新日志</a> |
+                    <a href="features.html" class="menulink">功能</a> |
+                    <a href="todo.html" class="menulink">项目状态</a> |
+                    <a href="toc.techdoc.html" class="menulink">技术文档</a>
+                  </div>
+                </td>
+                <td class="container_corner_upper_right"></td>
+              </tr>
+              <tr>
+                <td class="container_left"></td>
+                <td valign="top">
+                  <div><img class="pagetitle" src="Images/menu_large/techdoc.png"></div>
+                  <div>
+                    <h2>命令：gmcommands 参考</h2>
+
+                    <p>[GM01] 显示当前的位置</p>
+                    <code><pre class="code">!pos
+
+</pre></code>
+
+                    <p>[GM01] 获取当前连接的角色数量</p>
+                    <code><pre class="code">!worldload
+
+</pre></code>
+
+                    <p>[GM05] 将自己传送到指定的地图</p>
+                    <code><pre class="code">!warptomap 1
+
+</pre></code>
+
+                    <p>[GM05] 将自己传送到另一个玩家</p>
+                    <code><pre class="code">!pjump charactername
+
+</pre></code>
+
+                    <p>[GM10] 将玩家传送到自己身边</p>
+                    <code><pre class="code">!pcall charactername
+
+</pre></code>
+
+                    <p>[GM10] 设置角色的行走速度</p>
+                    <code><pre class="code">!speed 300
+
+</pre></code>
+
+                    <p>[GM10] 重置全局游戏时间</p>
+                    <code><pre class="code">!time 20-60-60
+
+</pre></code>
+
+                    <p>[GM10] 显示下次维护的时间</p>
+                    <code><pre class="code">!showmaintenance
+
+</pre></code>
+
+                    <p>[GM30] 踢出指定名字的玩家</p>
+                    <code><pre class="code">!kick charactername
+
+</pre></code>
+
+                    <p>[GM30] 生成指定ID的NPC或地图物体。使用1作为首位数字生成NPC，使用2生成物品。</p>
+                    <code><pre class="code">!spawn 0 10407
+
+</pre></code>
+
+                    <p>[GM30] 取消选定角色的生成</p>
+                    <code><pre class="code">!unspawn
+
+</pre></code>
+
+                    <p>[GM33] 向所有用户广播公告</p>
+                    <code><pre class="code">!b message to broadcast
+
+</pre></code>
+
+                    <p>[GM33] 将指定角色禁言一小时</p>
+                    <code><pre class="code">!mute charactername
+
+</pre></code>
+
+                    <p>[GM50] 设置角色的临时GM等级。信息在客户端关闭后会丢失。</p>
+                    <code><pre class="code">!setgmlvl 21 charactername
+
+</pre></code>
+
+                    <p>[GM55] 将物品添加到事件奖励列表</p>
+                    <code><pre class="code">!item 30000 1 charactername
+
+</pre></code>
+
+                    <p>[GM90] 重新生成世界</p>
+                    <code><pre class="code">!repopulate
+
+</pre></code>
+
+                    <p>[GM90] 踢出除自己以外所有连接到服务器的玩家</p>
+                    <code><pre class="code">!kickall
+
+</pre></code>
+
+                    <p>[GM90] 安排下次维护。使用过去的日期来取消它。在实际停机前两小时，玩家将每半小时通过集成广播收到通知。</p>
+                    <code><pre class="code">!schedulemaintenance 2008-07-31 18:00
+
+</pre></code>
+
+                    <p>[GM99] 强制运行垃圾回收器</p>
+                    <code><pre class="code">!gc
+
+</pre></code>
+
+                  </div>
+                  <div style="height:70px; width:100%;"><a href="#" class="footerlink">顶部</a></div>
+                </td>
+                <td class="container_right"></td>
+              </tr>
+              <tr>
+                <td class="container_corner_lower_left"></td>
+                <td class="container_bottom"></td>
+                <td class="container_corner_lower_right"></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td class="page_footer"><img src="images/logo-rev-low.png"></td>
+    </tr>
+  </table>
+</body>
+
+</html>

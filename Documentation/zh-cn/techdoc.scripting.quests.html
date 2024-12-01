@@ -1,0 +1,2467 @@
+﻿<html imt-state="translation">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>
+  </title>
+  <link rel="stylesheet" href="stylesheet/stylesheet.css">
+  <style data-id="immersive-translate-default-injected-css">
+    :root {
+      --immersive-translate-theme-underline-borderColor: #72ece9;
+      --immersive-translate-theme-nativeUnderline-borderColor: #72ece9;
+      --immersive-translate-theme-nativeDashed-borderColor: #72ece9;
+      --immersive-translate-theme-nativeDotted-borderColor: #72ece9;
+      --immersive-translate-theme-highlight-backgroundColor: #ffff00;
+      --immersive-translate-theme-dashed-borderColor: #59c1bd;
+      --immersive-translate-theme-blockquote-borderColor: #cc3355;
+      --immersive-translate-theme-thinDashed-borderColor: #ff374f;
+      --immersive-translate-theme-dashedBorder-borderColor: #94a3b8;
+      --immersive-translate-theme-dashedBorder-borderRadius: 0;
+      --immersive-translate-theme-solidBorder-borderColor: #94a3b8;
+      --immersive-translate-theme-solidBorder-borderRadius: 0;
+      --immersive-translate-theme-dotted-borderColor: #94a3b8;
+      --immersive-translate-theme-wavy-borderColor: #72ece9;
+      --immersive-translate-theme-dividingLine-borderColor: #94a3b8;
+      --immersive-translate-theme-grey-textColor: #2f4f4f;
+      --immersive-translate-theme-marker-backgroundColor: #fbda41;
+      --immersive-translate-theme-marker-backgroundColor-rgb: 251, 218, 65;
+      --immersive-translate-theme-marker2-backgroundColor: #ffff00;
+      --immersive-translate-theme-opacity-opacity: 10;
+    }
+
+    [imt-state="dual"] .immersive-translate-target-translation-pre-whitespace {
+      white-space: pre-wrap !important;
+    }
+
+    [imt-state="dual"] .immersive-translate-pdf-target-container {
+      position: absolute;
+      background-color: #fff;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+        sans-serif;
+      top: 0;
+      width: 600px;
+      height: 100%;
+      z-index: 2;
+      line-height: 1.3;
+      font-size: 16px;
+    }
+
+    [imt-state="dual"] .immersive-translate-target-wrapper[dir="rtl"] {
+      text-align: right;
+    }
+
+    [imt-state="dual"] .immersive-translate-pdf-target-container .immersive-translate-target-wrapper {
+      color: rgb(0, 0, 0);
+      white-space: normal;
+      position: absolute;
+    }
+
+    [imt-state="dual"] .immersive-translate-pdf-target-container .immersive-translate-target-wrapper font {
+      color: inherit;
+      white-space: inherit;
+      position: unset;
+    }
+
+    [imt-state="translation"] .immersive-translate-target-wrapper>br {
+      display: none;
+    }
+
+    [imt-state="translation"] .immersive-translate-target-translation-block-wrapper {
+      margin: 0 !important;
+    }
+
+    [imt-state="dual"] .immersive-translate-target-translation-block-wrapper {
+      margin: 8px 0 !important;
+      display: inline-block;
+    }
+
+    [imt-trans-position="before"] .immersive-translate-target-translation-block-wrapper {
+      display: block;
+    }
+
+    [imt-trans-position="before"] .immersive-translate-target-translation-block-wrapper {
+      margin-top: 0 !important;
+    }
+
+    [imt-state="dual"] .immersive-translate-target-translation-pdf-block-wrapper {
+      margin: 0 !important;
+      display: block;
+    }
+
+    [imt-state="dual"] .immersive-translate-target-translation-theme-grey-inner {
+      color: var(--immersive-translate-theme-grey-textColor);
+    }
+
+    [imt-state="dual"] .immersive-translate-target-translation-theme-underline-inner {
+      border-bottom: 1px solid var(--immersive-translate-theme-underline-borderColor) !important;
+    }
+
+    [imt-state="dual"] .immersive-translate-target-translation-theme-nativeUnderline-inner {
+      text-decoration: underline !important;
+      text-decoration-color: var(--immersive-translate-theme-nativeUnderline-borderColor) !important;
+    }
+
+    [imt-state="dual"] .immersive-translate-target-translation-block-wrapper-theme-dashedBorder {
+      border: 1px dashed var(--immersive-translate-theme-dashedBorder-borderColor) !important;
+      border-radius: var(--immersive-translate-theme-dashedBorder-borderRadius) !important;
+      padding: 6px;
+      margin-top: 2px;
+      display: block;
+    }
+
+    [imt-state="dual"] .immersive-translate-target-translation-inline-wrapper-theme-dashedBorder {
+      border: 1px dashed var(--immersive-translate-theme-dashedBorder-borderColor) !important;
+      border-radius: var(--immersive-translate-theme-dashedBorder-borderRadius) !important;
+      padding: 2px;
+    }
+
+    [imt-state="dual"] .immersive-translate-target-translation-block-wrapper-theme-solidBorder {
+      border: 1px solid var(--immersive-translate-theme-solidBorder-borderColor) !important;
+      border-radius: var(--immersive-translate-theme-solidBorder-borderRadius) !important;
+      padding: 6px;
+      margin-top: 2px;
+      display: block;
+    }
+
+    [imt-state="dual"] .immersive-translate-target-translation-inline-wrapper-theme-solidBorder {
+      border: 1px solid var(--immersive-translate-theme-solidBorder-borderColor) !important;
+      border-radius: var(--immersive-translate-theme-solidBorder-borderRadius) !important;
+      padding: 2px;
+    }
+
+    [imt-state="dual"] .immersive-translate-target-translation-theme-nativeDashed-inner {
+      text-decoration: underline !important;
+      text-decoration-color: var(--immersive-translate-theme-nativeDashed-borderColor) !important;
+      text-decoration-style: dashed !important;
+    }
+
+    [imt-state="dual"] .immersive-translate-target-translation-theme-thinDashed-inner {
+      border-bottom: 1px dashed var(--immersive-translate-theme-thinDashed-borderColor) !important;
+    }
+
+    [imt-state="dual"] .immersive-translate-target-translation-theme-dotted-inner {
+      background-image: linear-gradient(to right,
+          var(--immersive-translate-theme-dotted-borderColor) 30%,
+          rgba(255, 255, 255, 0) 0%);
+      background-position: bottom;
+      background-size: 5px 1px;
+      background-repeat: repeat-x;
+      padding-bottom: 3px;
+    }
+
+    [imt-state="dual"] .immersive-translate-target-translation-theme-nativeDotted-inner {
+      text-decoration: underline !important;
+      text-decoration-color: var(--immersive-translate-theme-nativeDotted-borderColor) !important;
+      text-decoration-style: dotted !important;
+    }
+
+    [imt-state="dual"] .immersive-translate-target-translation-theme-wavy-inner {
+      text-decoration: underline !important;
+      text-decoration-color: var(--immersive-translate-theme-wavy-borderColor) !important;
+      text-decoration-style: wavy !important;
+    }
+
+    [imt-state="dual"] .immersive-translate-target-translation-theme-dashed-inner {
+      background: linear-gradient(to right,
+          var(--immersive-translate-theme-dashed-borderColor) 0%,
+          var(--immersive-translate-theme-dashed-borderColor) 50%,
+          transparent 50%,
+          transparent 100%) repeat-x left bottom;
+      background-size: 8px 2px;
+      padding-bottom: 2px;
+    }
+
+    [imt-state="dual"] .immersive-translate-target-translation-block-wrapper-theme-dividingLine::before {
+      content: "";
+      display: block;
+      max-width: 80px;
+      width: 10%;
+      border-top: 1px dashed var(--immersive-translate-theme-dividingLine-borderColor);
+      padding-top: 8px;
+    }
+
+    [imt-state="dual"] .immersive-translate-target-translation-inline-wrapper-theme-dividingLine::before {
+      content: "";
+      border-left: 1px dashed var(--immersive-translate-theme-dividingLine-borderColor);
+      max-height: 16px;
+      height: 16px;
+      padding-left: 8px;
+    }
+
+    [imt-state="dual"] .immersive-translate-target-translation-theme-highlight-inner {
+      background: var(--immersive-translate-theme-highlight-backgroundColor);
+      box-decoration-break: clone;
+      -webkit-box-decoration-break: clone;
+    }
+
+    [imt-state="dual"] .immersive-translate-target-translation-block-wrapper-theme-marker {
+      line-height: 1.5em;
+    }
+
+    [imt-state="dual"] .immersive-translate-target-translation-theme-marker2-inner {
+      font-weight: bold;
+      text-shadow: 10px 0px 3px var(--immersive-translate-theme-marker2-backgroundColor),
+        16px 3px 9px var(--immersive-translate-theme-marker2-backgroundColor),
+        2px 0px 6px var(--immersive-translate-theme-marker2-backgroundColor),
+        -12px 0px 12px var(--immersive-translate-theme-marker2-backgroundColor) !important;
+    }
+
+    [imt-state="dual"] .immersive-translate-target-translation-theme-marker-inner {
+      /* TODO: add more texture */
+      background: linear-gradient(to right,
+          rgba(var(--immersive-translate-theme-marker-backgroundColor-rgb), 0.1),
+          rgba(var(--immersive-translate-theme-marker-backgroundColor-rgb), 0.9) 3%,
+          rgba(var(--immersive-translate-theme-marker-backgroundColor-rgb), 0.9) 35%,
+          rgba(var(--immersive-translate-theme-marker-backgroundColor-rgb), 0.9) 70%,
+          rgba(var(--immersive-translate-theme-marker-backgroundColor-rgb), 0.8) 95%,
+          rgba(var(--immersive-translate-theme-marker-backgroundColor-rgb), 0.3));
+      box-decoration-break: clone;
+      -webkit-box-decoration-break: clone;
+    }
+
+    [imt-state="dual"] .immersive-translate-target-translation-theme-weakening {
+      opacity: 0.618 !important;
+    }
+
+    [imt-state="dual"] .immersive-translate-target-translation-theme-italic {
+      font-style: italic !important;
+    }
+
+    [imt-state="dual"] .immersive-translate-target-translation-theme-bold {
+      font-weight: bold !important;
+    }
+
+    [imt-state="dual"] .immersive-translate-target-translation-block-wrapper-theme-paper {
+      margin: 8px 0;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      padding: 16px 32px;
+      display: block;
+    }
+
+    [imt-state="dual"] .immersive-translate-target-translation-block-wrapper-theme-blockquote {
+      border-left: 4px solid var(--immersive-translate-theme-blockquote-borderColor) !important;
+      padding-left: 12px !important;
+      margin-top: 4px;
+      margin-bottom: 4px;
+      padding-top: 4px;
+      padding-bottom: 4px;
+      display: block;
+    }
+
+    [imt-state="dual"] .immersive-translate-target-translation-theme-mask-inner {
+      filter: blur(5px) !important;
+      transition: filter 0.3s ease !important;
+      border-radius: 10px;
+      display: inline-block;
+    }
+
+    [data-immersive-translate-root-translation-theme="none"] .immersive-translate-target-translation-theme-mask-inner {
+      filter: none !important;
+    }
+
+    [data-immersive-translate-root-translation-theme="mask"] .immersive-translate-target-inner {
+      filter: blur(5px) !important;
+      transition: filter 0.3s ease !important;
+      border-radius: 10px;
+      display: inline-block;
+    }
+
+    /* opacity theme start */
+
+    [imt-state="dual"] .immersive-translate-target-translation-theme-opacity-inner {
+      filter: opacity(calc(var(--immersive-translate-theme-opacity-opacity) * 1%)) !important;
+      transition: filter 0.3s ease !important;
+      border-radius: 10px;
+      display: inline-block;
+    }
+
+    [data-immersive-translate-root-translation-theme="none"] .immersive-translate-target-translation-theme-opacity-inner {
+      filter: none !important;
+    }
+
+    [data-immersive-translate-root-translation-theme="opacity"] .immersive-translate-target-inner,
+    [imt-state="dual"] .immersive-translate-target-translation-theme-opacity-inner:hover {
+      filter: opacity(calc(var(--immersive-translate-theme-opacity-opacity) * 1%)) !important;
+      transition: filter 0.3s ease !important;
+      border-radius: 10px;
+      display: inline-block;
+    }
+
+    [imt-state="dual"] .immersive-translate-target-translation-theme-opacity-inner:hover {
+      filter: none !important;
+    }
+
+    [imt-state="dual"] .immersive-translate-target-translation-theme-mask-inner:hover {
+      filter: none !important;
+    }
+
+    [data-immersive-translate-root-translation-theme="opacity"] .immersive-translate-target-inner:hover {
+      filter: none !important;
+    }
+
+    [data-immersive-translate-root-translation-theme="mask"] .immersive-translate-target-inner:hover {
+      filter: none !important;
+    }
+
+    /* opacity theme end */
+
+    /* vertical css , please remain it in the last one. */
+    .immersive-translate-target-translation-vertical-block-wrapper {
+      margin: 0px 8px !important;
+    }
+
+    .immersive-translate-text {
+      font-size: 15px !important;
+    }
+
+    .immersive-translate-error-toast {
+      position: fixed;
+      top: 5%;
+      z-index: 99999999;
+      left: 0;
+      right: 0;
+      margin: auto;
+      max-width: 300px;
+      padding: 16px;
+      border-radius: 12px;
+      background-color: rgba(0, 0, 0, 0.8);
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    @media all and (min-width: 750px) {
+      .immersive-translate-error-toast {
+        max-width: 400px;
+      }
+    }
+
+    .immersive-translate-clickable-button {
+      cursor: pointer;
+    }
+
+    .immersive-translate-help-button {
+      cursor: pointer;
+    }
+
+    .immersive-translate-loading-text:before {
+      content: "...";
+    }
+
+    /* dark mode for loading */
+
+    @media only screen and (prefers-color-scheme: dark) {
+      .immersive-translate-loading {
+        border: 2px rgba(255, 255, 255, 0.25) solid !important;
+        border-top: 2px rgba(255, 255, 255, 1) solid !important;
+      }
+    }
+
+    .immersive-translate-error-wrapper {
+      position: relative;
+      display: inline-flex;
+      padding: 6px;
+      margin: 0 12px;
+      white-space: nowrap;
+      font-size: 0.9em;
+    }
+
+    [lang="zh-CN"] .immersive-translate-error-wrapper {
+      font-size: 0.75em;
+    }
+
+    [lang="zh-TW"] .immersive-translate-error-wrapper {
+      font-size: 0.75em;
+    }
+
+    .immersive-translate-tooltip {
+      position: relative;
+      display: inline-flex;
+      /* little indicater to indicate it's hoverable */
+    }
+
+    .immersive-translate-tooltip-content {
+      /* here's the magic */
+      position: absolute;
+      z-index: 100000000000;
+
+      left: 50%;
+      bottom: 0;
+      transform: translate(-50%, 110%);
+      line-height: 1;
+      /* and add a small left margin */
+
+      /* basic styles */
+      width: max-content;
+      max-width: 250px;
+      word-wrap: break-word;
+      white-space: pre-line;
+      padding: 10px;
+      border-radius: 10px;
+      background: #000c;
+      color: #fff;
+      text-align: center;
+      font-size: 14px;
+      display: none;
+      /* hide by default */
+    }
+
+    .immersive-translate-tooltip:hover .immersive-translate-tooltip-content {
+      display: block;
+    }
+
+    .immersive-translate-tooltip:hover+.immersive-translate-tooltip-content {
+      display: block;
+    }
+
+    .immersive-translate-tooltip-content-table {
+      left: unset !important;
+      bottom: unset !important;
+      transform: translate(-10%, 50%) !important;
+    }
+
+    .immersive-translate-tooltip:hover:before {
+      display: block;
+    }
+
+    .immersive-translate-loading-spinner {
+      vertical-align: middle !important;
+      width: 10px !important;
+      height: 10px !important;
+      display: inline-block !important;
+      margin: 0 4px !important;
+      border: 2px rgba(221, 244, 255, 0.6) solid !important;
+      border-top: 2px rgba(0, 0, 0, 0.375) solid !important;
+      border-left: 2px rgba(0, 0, 0, 0.375) solid !important;
+      border-radius: 50% !important;
+      padding: 0 !important;
+      -webkit-animation: immersive-translate-loading-animation 0.6s infinite linear !important;
+      animation: immersive-translate-loading-animation 0.6s infinite linear !important;
+    }
+
+    @-webkit-keyframes immersive-translate-loading-animation {
+      from {
+        -webkit-transform: rotate(0deg);
+      }
+
+      to {
+        -webkit-transform: rotate(359deg);
+      }
+    }
+
+    @keyframes immersive-translate-loading-animation {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(359deg);
+      }
+    }
+
+
+    .imt-image-status {
+      background-color: rgba(0, 0, 0, 0.50);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: var(--bg-2, #FFF);
+      font-size: 14px;
+    }
+  </style>
+  <style data-id="immersive-translate-user-custom-style">
+    :root {
+
+      .immersive-translate-target-inner {
+        font-family: inherit;
+      }
+    }
+  </style>
+  <style data-id="immersive-translate-dynamic-injected-css">
+    .immersive-translate-target-wrapper[dir='rtl'] {
+      text-align: right;
+    }
+
+    .immersive-translate-target-wrapper[dir='rtl'] [data-immersive-translate-class-bak*='block-wrapper'] {
+      display: block;
+    }
+
+    .immersive-translate-target-wrapper {
+      word-break: break-word;
+    }
+
+    [imt-state="translation"] .immersive-translate-target-wrapper[dir='rtl'] {
+      display: inline-block;
+    }
+
+    [dir='rtl'] .immersive-translate-target-wrapper:not([dir]) {
+      text-align: left;
+    }
+  </style>
+</head>
+
+<body data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6">
+  <table class="container" cellspacing="0" data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6">
+    <tbody data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6">
+      <tr data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6">
+        <td style="padding:0px; margin:0px;" data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6">
+          <div class="overlay_top" data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6">
+            <div class="overlay_bottom" data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6">
+              <table class="container" cellspacing="0"
+                data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6">
+                <tbody data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6">
+                  <tr data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6">
+                    <td class="container_corner_upper_left"
+                      data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"></td>
+                    <td class="container_top" data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6">
+                      <div style="padding-left:130px; position:relative; top:10px;"
+                        data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                        data-immersive-translate-paragraph="1">
+                        <font class="notranslate immersive-translate-target-wrapper"
+                          data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                          <font
+                            class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                            data-immersive-translate-translation-element-mark="1">
+                            <font
+                              class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                              data-immersive-translate-translation-element-mark="1">主页 |优菈 |更改日志 |特性 |项目进展 |技术文档</font>
+                          </font>
+                        </font>
+                      </div>
+                    </td>
+                    <td class="container_corner_upper_right"
+                      data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"></td>
+                  </tr>
+                  <tr data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6">
+                    <td class="container_left" data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6">
+                    </td>
+                    <td valign="top" data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6">
+                      <div data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><img class="pagetitle"
+                          src="Images/menu_large/scripting.png"></div>
+                      <div data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6">
+                        <p data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                          data-immersive-translate-paragraph="1">
+                          <font class="notranslate immersive-translate-target-wrapper"
+                            data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                            <font
+                              class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                              data-immersive-translate-translation-element-mark="1">
+                              <font
+                                class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                data-immersive-translate-translation-element-mark="1">这是关于 quest scriping
+                                的文档。从目前起，我们将使本文档保持最新状态。对于具有所需和验证布局的 quest 文件，我们将提供转换工具来更新此功能。</font>
+                            </font>
+                          </font>
+                        </p>
+                        <h2 data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                          data-immersive-translate-paragraph="1">
+                          <font class="notranslate immersive-translate-target-wrapper"
+                            data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                            <font
+                              class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                              data-immersive-translate-translation-element-mark="1">
+                              <font
+                                class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                data-immersive-translate-translation-element-mark="1">按字母表排列的函数</font>
+                            </font>
+                          </font>
+                        </h2>
+                        <div class="paragraph_menu"
+                          data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6">
+                          <p data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6">
+                          </p>
+                          <ol data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6">
+                            <li data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><a
+                                href="#Saga.AddStep"
+                                data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                                data-immersive-translate-paragraph="1">Saga.AddStep</a></li>
+                            <li data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><a
+                                href="#Saga.AddWaypoint"
+                                data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                                data-immersive-translate-paragraph="1">Saga.AddWaypoint</a></li>
+                            <li data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><a
+                                href="#Saga.CheckInventoryCount "
+                                data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                                data-immersive-translate-paragraph="1">Saga.CheckInventoryCount </a></li>
+                            <li data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><a
+                                href="#Saga.ClearWaypoints"
+                                data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                                data-immersive-translate-paragraph="1">Saga.ClearWaypoints</a></li>
+                            <li data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><a
+                                href="#Saga.Eliminate"
+                                data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                                data-immersive-translate-paragraph="1">
+                                <font class="notranslate immersive-translate-target-wrapper"
+                                  data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                                  <font
+                                    class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                    data-immersive-translate-translation-element-mark="1">
+                                    <font
+                                      class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                      data-immersive-translate-translation-element-mark="1">Saga.Eliminate 公司</font>
+                                  </font>
+                                </font>
+                              </a></li>
+                            <li data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><a
+                                href="#Saga.FindPosition"
+                                data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                                data-immersive-translate-paragraph="1">
+                                <font class="notranslate immersive-translate-target-wrapper"
+                                  data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                                  <font
+                                    class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                    data-immersive-translate-translation-element-mark="1">
+                                    <font
+                                      class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                      data-immersive-translate-translation-element-mark="1">Saga.FindPosition 文件</font>
+                                  </font>
+                                </font>
+                              </a></li>
+                            <li data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><a
+                                href="#Saga.FindQuestItem"
+                                data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                                data-immersive-translate-paragraph="1">Saga.FindQuestItem</a></li>
+                            <li data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><a
+                                href="#Saga.FreeInventoryCount "
+                                data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                                data-immersive-translate-paragraph="1">Saga.FreeInventoryCount </a></li>
+                            <li data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><a
+                                href="#Saga.GetLastDialogId"
+                                data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                                data-immersive-translate-paragraph="1">Saga.GetLastDialogId</a></li>
+                            <li data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><a
+                                href="#Saga.GetNPCIndex"
+                                data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                                data-immersive-translate-paragraph="1">Saga.GetNPCIndex</a></li>
+                            <li data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><a
+                                href="#Saga.GiveExp"
+                                data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                                data-immersive-translate-paragraph="1">
+                                <font class="notranslate immersive-translate-target-wrapper"
+                                  data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                                  <font
+                                    class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                    data-immersive-translate-translation-element-mark="1">
+                                    <font
+                                      class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                      data-immersive-translate-translation-element-mark="1">Saga.GiveExp 函数</font>
+                                  </font>
+                                </font>
+                              </a></li>
+                            <li data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><a
+                                href="#Saga.GiveItem"
+                                data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                                data-immersive-translate-paragraph="1">Saga.GiveItem</a></li>
+                            <li data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><a
+                                href="#Saga.GiveZeny"
+                                data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                                data-immersive-translate-paragraph="1">
+                                <font class="notranslate immersive-translate-target-wrapper"
+                                  data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                                  <font
+                                    class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                    data-immersive-translate-translation-element-mark="1">
+                                    <font
+                                      class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                      data-immersive-translate-translation-element-mark="1">Saga.GiveZeny 公司</font>
+                                  </font>
+                                </font>
+                              </a></li>
+                            <li data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><a
+                                href="#Saga.InsertQuest"
+                                data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                                data-immersive-translate-paragraph="1">Saga.InsertQuest</a></li>
+                            <li data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><a
+                                href="#Saga.IsSubStepComplete"
+                                data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                                data-immersive-translate-paragraph="1">Saga.IsSubStepComplete</a></li>
+                            <li data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><a
+                                href="#Saga.NpcGiveItem"
+                                data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                                data-immersive-translate-paragraph="1">Saga.NpcGiveItem</a></li>
+                            <li data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><a
+                                href="#Saga.NpcTakeItem"
+                                data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                                data-immersive-translate-paragraph="1">Saga.NpcTakeItem</a></li>
+                            <li data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><a
+                                href="#Saga.QuestComplete"
+                                data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                                data-immersive-translate-paragraph="1">Saga.QuestComplete</a></li>
+                            <li data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><a
+                                href="#Saga.StepComplete"
+                                data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                                data-immersive-translate-paragraph="1">Saga.StepComplete</a></li>
+                            <li data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><a
+                                href="#Saga.SubStepComplete"
+                                data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                                data-immersive-translate-paragraph="1">Saga.SubStepComplete</a></li>
+                            <li data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><a
+                                href="#Saga.UserUpdateActionObjectType"
+                                data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                                data-immersive-translate-paragraph="1">Saga.UserUpdateActionObjectType</a></li>
+                          </ol>
+                          <p data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"></p>
+                        </div>
+                        <h2 data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><a
+                            name="Saga.AddStep" data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">Saga.AddStep</a></h2>
+                        <div class="paragraph" data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                          data-immersive-translate-paragraph="1"><code
+                            data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6">Saga.AddStep(cid, QuestID, StepId);</code>
+                          <p data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><b
+                              data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                              data-immersive-translate-paragraph="1">
+                              <font class="notranslate immersive-translate-target-wrapper"
+                                data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                                <font
+                                  class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                  data-immersive-translate-translation-element-mark="1">
+                                  <font
+                                    class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                    data-immersive-translate-translation-element-mark="1">言论：</font>
+                                </font>
+                              </font>
+                            </b></p>
+                          <p data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">
+                            <font class="notranslate immersive-translate-target-wrapper"
+                              data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                              <font
+                                class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                data-immersive-translate-translation-element-mark="1">
+                                <font
+                                  class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                  data-immersive-translate-translation-element-mark="1">向任务添加步骤。这只能在初始化期间完成。</font>
+                              </font>
+                            </font>
+                          </p><b data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">
+                            <font class="notranslate immersive-translate-target-wrapper"
+                              data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                              <font
+                                class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                data-immersive-translate-translation-element-mark="1">
+                                <font
+                                  class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                  data-immersive-translate-translation-element-mark="1">例：</font>
+                              </font>
+                            </font>
+                          </b>
+                          <p data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">
+                            <font class="notranslate immersive-translate-target-wrapper"
+                              data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                              <font
+                                class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                data-immersive-translate-translation-element-mark="1">
+                                <font
+                                  class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                  data-immersive-translate-translation-element-mark="1">下面的代码示例说明了 Saga.AddStep 的用法：
+                                </font>
+                              </font>
+                            </font>
+                          </p><code data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><pre class="code">function QUEST_START(cid)
+-- Initialize all quest steps
+-- Initialize all starting navigation points
+    
+Saga.AddStep(cid, QuestID, 101);
+Saga.AddStep(cid, QuestID, 102);
+Saga.AddStep(cid, QuestID, 103);
+Saga.InsertQuest(cid, QuestID, 1);
+    
+return 0;
+end </pre></code>
+                        </div>
+                        <h2 data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><a
+                            name="Saga.AddWaypoint"
+                            data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">Saga.AddWaypoint</a></h2>
+                        <div class="paragraph" data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                          data-immersive-translate-paragraph="1"><code
+                            data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6">Saga.AddWaypoint(cid, QuestID, StepId, SubstepId, NPCIndex);</code>
+                          <p data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><b
+                              data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                              data-immersive-translate-paragraph="1">
+                              <font class="notranslate immersive-translate-target-wrapper"
+                                data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                                <font
+                                  class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                  data-immersive-translate-translation-element-mark="1">
+                                  <font
+                                    class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                    data-immersive-translate-translation-element-mark="1">言论：</font>
+                                </font>
+                              </font>
+                            </b></p>
+                          <p data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">
+                            <font class="notranslate immersive-translate-target-wrapper"
+                              data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                              <font
+                                class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                data-immersive-translate-translation-element-mark="1">
+                                <font
+                                  class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                  data-immersive-translate-translation-element-mark="1">这将导致 NPC 被激活（如果它还没有被激活）。通过调用
+                                  Saga.SubstepComplete 或 Saga.QuestComplete，您可以停用 NPC。</font>
+                              </font>
+                            </font>
+                          </p><b data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">
+                            <font class="notranslate immersive-translate-target-wrapper"
+                              data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                              <font
+                                class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                data-immersive-translate-translation-element-mark="1">
+                                <font
+                                  class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                  data-immersive-translate-translation-element-mark="1">例：</font>
+                              </font>
+                            </font>
+                          </b>
+                          <p data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">
+                            <font class="notranslate immersive-translate-target-wrapper"
+                              data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                              <font
+                                class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                data-immersive-translate-translation-element-mark="1">
+                                <font
+                                  class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                  data-immersive-translate-translation-element-mark="1">以下代码示例演示了 Saga.AddWaypoint 的使用：
+                                </font>
+                              </font>
+                            </font>
+                          </p><code data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><pre class="code">function QUEST_STEP_2(cid)
+-- Talk to mischa              
+Saga.AddWaypoint(cid, QuestID, 102, 1, 1000);      
+
+-- Check for completion
+local ret = Saga.GetNPCIndex(cid);    
+if ret == 1000 then
+  Saga.NpcTakeItem(cid, 2630, 6);
+  Saga.SubstepComplete(cid, QuestID, 1201, 1);
+end	
+
+  -- Check if all substeps are completed
+  for i = 1, 1 do
+       if Saga.IsSubStepCompleted(cid,QuestID,102, i) == false then
+    return -1;
+   end
+  end	
+  
+  Saga.StepComplete(cid, QuestID, 102);
+  Saga.ClearWaypoints(cid, QuestID);
+  Saga.QuestComplete(cid, QuestID);	    
+  return 0; 
+end
+    </pre></code>
+                        </div>
+                        <h2 data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><a
+                            name="Saga.CheckInventoryCount "
+                            data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">Saga.CheckInventoryCount </a></h2>
+                        <div class="paragraph" data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                          data-immersive-translate-paragraph="1"><code
+                            data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6">Saga.CheckInventoryCount(uid, ItemId);</code>
+                          <p data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><b
+                              data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                              data-immersive-translate-paragraph="1">
+                              <font class="notranslate immersive-translate-target-wrapper"
+                                data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                                <font
+                                  class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                  data-immersive-translate-translation-element-mark="1">
+                                  <font
+                                    class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                    data-immersive-translate-translation-element-mark="1">言论：</font>
+                                </font>
+                              </font>
+                            </b></p>
+                          <p data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">
+                            <font class="notranslate immersive-translate-target-wrapper"
+                              data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                              <font
+                                class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                data-immersive-translate-translation-element-mark="1">
+                                <font
+                                  class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                  data-immersive-translate-translation-element-mark="1">返回在用户清单中找到的具有指定 ItemId 的商品数量
+                                </font>
+                              </font>
+                            </font>
+                          </p><b data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">
+                            <font class="notranslate immersive-translate-target-wrapper"
+                              data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                              <font
+                                class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                data-immersive-translate-translation-element-mark="1">
+                                <font
+                                  class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                  data-immersive-translate-translation-element-mark="1">例：</font>
+                              </font>
+                            </font>
+                          </b>
+                          <p data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">
+                            <font class="notranslate immersive-translate-target-wrapper"
+                              data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                              <font
+                                class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                data-immersive-translate-translation-element-mark="1">
+                                <font
+                                  class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                  data-immersive-translate-translation-element-mark="1">以下代码示例说明了
+                                  Saga.CheckInventoryCount 的用法：</font>
+                              </font>
+                            </font>
+                          </p><code data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><pre class="code">function QUEST_STEP_3(cid)
+-- Deliver training result to Dein
+   local NPCIndex = 1173;
+   local ItemId = 9944;
+   local ret = Saga.GetNPCIndex(cid);    
+   local ItemCount = Saga.CheckUserInventory(cid, ItemId );
+
+   if ret == NPCIndex then
+   Saga.GeneralDialog(cid, 3936);
+   if ItemCount &gt; 0 then
+       Saga.NpcTakeItem(cid, ItemId, 1 );
+       Saga.StepComplete(cid, QuestID, 39603);
+   else
+       return  -1;		  
+   end
+   else
+       return  -1;
+   end
+
+   Saga.ClearWaypoints(cid, QuestID);	
+   Saga.QuestComplete(cid, QuestID);	
+   return 0; 
+end
+    </pre></code>
+                        </div>
+                        <h2 data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><a
+                            name="Saga.ClearWaypoints"
+                            data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">Saga.ClearWaypoints</a></h2>
+                        <div class="paragraph" data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                          data-immersive-translate-paragraph="1"><code
+                            data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6">Saga.ClearWaypoints(cid, QuestID);</code>
+                          <p data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><b
+                              data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                              data-immersive-translate-paragraph="1">
+                              <font class="notranslate immersive-translate-target-wrapper"
+                                data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                                <font
+                                  class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                  data-immersive-translate-translation-element-mark="1">
+                                  <font
+                                    class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                    data-immersive-translate-translation-element-mark="1">言论：</font>
+                                </font>
+                              </font>
+                            </b></p>
+                          <p data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">
+                            <font class="notranslate immersive-translate-target-wrapper"
+                              data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                              <font
+                                class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                data-immersive-translate-translation-element-mark="1">
+                                <font
+                                  class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                  data-immersive-translate-translation-element-mark="1">删除所有已保存的航点。（注意，您不能只删除 1
+                                  个航点，要么全部删除，要么全无删除）</font>
+                              </font>
+                            </font>
+                          </p><b data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">
+                            <font class="notranslate immersive-translate-target-wrapper"
+                              data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                              <font
+                                class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                data-immersive-translate-translation-element-mark="1">
+                                <font
+                                  class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                  data-immersive-translate-translation-element-mark="1">例：</font>
+                              </font>
+                            </font>
+                          </b>
+                          <p data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">
+                            <font class="notranslate immersive-translate-target-wrapper"
+                              data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                              <font
+                                class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                data-immersive-translate-translation-element-mark="1">
+                                <font
+                                  class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                  data-immersive-translate-translation-element-mark="1">下面的代码示例说明了 Saga.ClearWaypoints
+                                  的用法：</font>
+                              </font>
+                            </font>
+                          </p><code data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><pre class="code">function QUEST_STEP_2(cid)
+-- Talk to mischa              
+Saga.AddWaypoint(cid, QuestID, 102, 1, 1000);      
+
+-- Check for completion
+local ret = Saga.GetNPCIndex(cid);    
+if ret == 1000 then
+  Saga.NpcTakeItem(cid, 2630, 6);
+  Saga.SubstepComplete(cid, QuestID, 1201, 1);
+end	
+
+  -- Check if all substeps are completed
+  for i = 1, 1 do
+       if Saga.IsSubStepCompleted(cid,QuestID,102, i) == false then
+    return -1;
+   end
+  end	
+  
+  Saga.StepComplete(cid, QuestID, 102);
+  Saga.ClearWaypoints(cid, QuestID);
+  Saga.QuestComplete(cid, QuestID);	    
+  return 0; 
+end</pre></code>
+                        </div>
+                        <h2 data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><a
+                            name="Saga.Eliminate" data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">
+                            <font class="notranslate immersive-translate-target-wrapper"
+                              data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                              <font
+                                class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                data-immersive-translate-translation-element-mark="1">
+                                <font
+                                  class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                  data-immersive-translate-translation-element-mark="1">Saga.Eliminate 公司</font>
+                              </font>
+                            </font>
+                          </a></h2>
+                        <div class="paragraph" data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                          data-immersive-translate-paragraph="1"><code
+                            data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6">Saga.Eliminate(cid, QuestId, StepId, NpdId, Count, Substep);</code>
+                          <p data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><b
+                              data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                              data-immersive-translate-paragraph="1">
+                              <font class="notranslate immersive-translate-target-wrapper"
+                                data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                                <font
+                                  class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                  data-immersive-translate-translation-element-mark="1">
+                                  <font
+                                    class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                    data-immersive-translate-translation-element-mark="1">言论：</font>
+                                </font>
+                              </font>
+                            </b></p>
+                          <p data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">
+                            <font class="notranslate immersive-translate-target-wrapper"
+                              data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                              <font
+                                class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                data-immersive-translate-translation-element-mark="1">
+                                <font
+                                  class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                  data-immersive-translate-translation-element-mark="1">将 Eliminate
+                                  任务添加到任务目标的列表中。完成指定任务后，它将重新检查函数以进行下一步操作。返回指定子步骤的已杀死怪物的数量。</font>
+                              </font>
+                            </font>
+                          </p><b data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">
+                            <font class="notranslate immersive-translate-target-wrapper"
+                              data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                              <font
+                                class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                data-immersive-translate-translation-element-mark="1">
+                                <font
+                                  class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                  data-immersive-translate-translation-element-mark="1">例：</font>
+                              </font>
+                            </font>
+                          </b>
+                          <p data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">
+                            <font class="notranslate immersive-translate-target-wrapper"
+                              data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                              <font
+                                class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                data-immersive-translate-translation-element-mark="1">
+                                <font
+                                  class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                  data-immersive-translate-translation-element-mark="1">以下代码示例重点介绍了 Saga.Eliminate 的用法：
+                                </font>
+                              </font>
+                            </font>
+                          </p><code data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><pre class="code">function QUEST_STEP_2(cid)
+Saga.Eliminate(cid, QuestID, 302, 10026, 7, 1);
+Saga.Eliminate(cid, QuestID, 302, 10027, 7, 1);
+Saga.Eliminate(cid, QuestID, 302, 10252, 7, 1);
+
+  -- Check if all substeps are completed
+  for i = 1, 1 do
+       if Saga.IsSubStepCompleted(cid,QuestID,302, i) == false then
+    return -1;
+   end
+  end		
+
+Saga.StepComplete(cid, QuestID, 302);
+return 0;
+end
+    </pre></code>
+                        </div>
+                        <h2 data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><a
+                            name="Saga.FindPosition"
+                            data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">
+                            <font class="notranslate immersive-translate-target-wrapper"
+                              data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                              <font
+                                class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                data-immersive-translate-translation-element-mark="1">
+                                <font
+                                  class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                  data-immersive-translate-translation-element-mark="1">Saga.FindPosition 文件</font>
+                              </font>
+                            </font>
+                          </a></h2>
+                        <div class="paragraph" data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                          data-immersive-translate-paragraph="1"><code
+                            data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6">Saga.FindPosition(cid, QuestId, Position.X , Position.Y, Position.Z, MapId);</code>
+                          <p data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><b
+                              data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                              data-immersive-translate-paragraph="1">
+                              <font class="notranslate immersive-translate-target-wrapper"
+                                data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                                <font
+                                  class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                  data-immersive-translate-translation-element-mark="1">
+                                  <font
+                                    class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                    data-immersive-translate-translation-element-mark="1">言论：</font>
+                                </font>
+                              </font>
+                            </b></p>
+                          <p data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">
+                            <font class="notranslate immersive-translate-target-wrapper"
+                              data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                              <font
+                                class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                data-immersive-translate-translation-element-mark="1">
+                                <font
+                                  class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                  data-immersive-translate-translation-element-mark="1">
+                                  当服务器进入目标的边界内时，以服务器为目标以重新检查任务为目标。返回 3 维空间中到该点的距离。</font>
+                              </font>
+                            </font>
+                          </p><b data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">
+                            <font class="notranslate immersive-translate-target-wrapper"
+                              data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                              <font
+                                class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                data-immersive-translate-translation-element-mark="1">
+                                <font
+                                  class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                  data-immersive-translate-translation-element-mark="1">例：</font>
+                              </font>
+                            </font>
+                          </b>
+                          <p data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">
+                            <font class="notranslate immersive-translate-target-wrapper"
+                              data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                              <font
+                                class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                data-immersive-translate-translation-element-mark="1">
+                                <font
+                                  class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                  data-immersive-translate-translation-element-mark="1">下面的代码示例说明了 Saga.FindPosition
+                                  的用法：</font>
+                              </font>
+                            </font>
+                          </p>
+                          <font class="notranslate immersive-translate-target-wrapper"
+                            data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                            <font
+                              class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                              data-immersive-translate-translation-element-mark="1">
+                              <font
+                                class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                data-immersive-translate-translation-element-mark="1">无示例</font>
+                            </font>
+                          </font>
+                        </div>
+                        <h2 data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><a
+                            name="Saga.FindQuestItem"
+                            data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">Saga.FindQuestItem</a></h2>
+                        <div class="paragraph" data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                          data-immersive-translate-paragraph="1"><code
+                            data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6">Saga.FindQuestItem(cid, QuestId, StepId, NpcId, ItemId, Ratio, Count, Substep);</code>
+                          <p data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><b
+                              data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                              data-immersive-translate-paragraph="1">
+                              <font class="notranslate immersive-translate-target-wrapper"
+                                data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                                <font
+                                  class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                  data-immersive-translate-translation-element-mark="1">
+                                  <font
+                                    class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                    data-immersive-translate-translation-element-mark="1">言论：</font>
+                                </font>
+                              </font>
+                            </b></p>
+                          <p data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">
+                            <font class="notranslate immersive-translate-target-wrapper"
+                              data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                              <font
+                                class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                data-immersive-translate-translation-element-mark="1">
+                                <font
+                                  class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                  data-immersive-translate-translation-element-mark="1">
+                                  返回指定项的项出现次数。（注意，它还会激活指定的生物，以指定的掉落率掉落物品，直到步骤完成）</font>
+                              </font>
+                            </font>
+                          </p><b data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">
+                            <font class="notranslate immersive-translate-target-wrapper"
+                              data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                              <font
+                                class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                data-immersive-translate-translation-element-mark="1">
+                                <font
+                                  class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                  data-immersive-translate-translation-element-mark="1">例：</font>
+                              </font>
+                            </font>
+                          </b>
+                          <p data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">
+                            <font class="notranslate immersive-translate-target-wrapper"
+                              data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                              <font
+                                class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                data-immersive-translate-translation-element-mark="1">
+                                <font
+                                  class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                  data-immersive-translate-translation-element-mark="1">下面的代码示例说明了 Saga.FindQuestItem
+                                  的用法：</font>
+                              </font>
+                            </font>
+                          </p><code data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><pre class="code">function QUEST_STEP_1(cid)
+-- Get 6 Chonchon Fry Wings	
+Saga.FindQuestItem(cid, QuestID, 101, 10026, 2630, 8000, 6, 1);
+Saga.FindQuestItem(cid, QuestID, 101, 10027, 2630, 8000, 6, 1);
+Saga.FindQuestItem(cid, QuestID, 101, 10252, 2630, 8000, 6, 1);
+
+  -- Check if all substeps are completed
+  for i = 1, 1 do
+       if Saga.IsSubStepCompleted(cid,QuestID,101, i) == false then
+    return -1;
+   end
+  end
+
+Saga.StepComplete(cid, QuestID, 101);	
+end
+    </pre></code>
+                        </div>
+                        <h2 data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><a
+                            name="Saga.FreeInventoryCount "
+                            data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">Saga.FreeInventoryCount </a></h2>
+                        <div class="paragraph" data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                          data-immersive-translate-paragraph="1"><code
+                            data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6">Saga.FreeInventoryCount (uid, ItemId);</code>
+                          <p data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><b
+                              data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                              data-immersive-translate-paragraph="1">
+                              <font class="notranslate immersive-translate-target-wrapper"
+                                data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                                <font
+                                  class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                  data-immersive-translate-translation-element-mark="1">
+                                  <font
+                                    class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                    data-immersive-translate-translation-element-mark="1">言论：</font>
+                                </font>
+                              </font>
+                            </b></p>
+                          <p data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">
+                            <font class="notranslate immersive-translate-target-wrapper"
+                              data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                              <font
+                                class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                data-immersive-translate-translation-element-mark="1">
+                                <font
+                                  class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                  data-immersive-translate-translation-element-mark="1">返回可用于新物品的可用库存槽数量。</font>
+                              </font>
+                            </font>
+                          </p><b data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">
+                            <font class="notranslate immersive-translate-target-wrapper"
+                              data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                              <font
+                                class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                data-immersive-translate-translation-element-mark="1">
+                                <font
+                                  class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                  data-immersive-translate-translation-element-mark="1">例：</font>
+                              </font>
+                            </font>
+                          </b>
+                          <p data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">
+                            <font class="notranslate immersive-translate-target-wrapper"
+                              data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                              <font
+                                class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                data-immersive-translate-translation-element-mark="1">
+                                <font
+                                  class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                  data-immersive-translate-translation-element-mark="1">以下代码示例说明了
+                                  Saga.FreeInventoryCount 的用法：</font>
+                              </font>
+                            </font>
+                          </p>
+                          <font class="notranslate immersive-translate-target-wrapper"
+                            data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                            <font
+                              class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                              data-immersive-translate-translation-element-mark="1">
+                              <font
+                                class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                data-immersive-translate-translation-element-mark="1">无示例</font>
+                            </font>
+                          </font>
+                        </div>
+                        <h2 data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><a
+                            name="Saga.GetLastDialogId"
+                            data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">Saga.GetLastDialogId</a></h2>
+                        <div class="paragraph" data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                          data-immersive-translate-paragraph="1">
+                          <font class="notranslate immersive-translate-target-wrapper"
+                            data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                            <font
+                              class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                              data-immersive-translate-translation-element-mark="1">
+                              <font
+                                class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                data-immersive-translate-translation-element-mark="1">Saga.GetLastDialogId（cid）;</font>
+                            </font>
+                          </font>
+                          <p data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><b
+                              data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                              data-immersive-translate-paragraph="1">
+                              <font class="notranslate immersive-translate-target-wrapper"
+                                data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                                <font
+                                  class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                  data-immersive-translate-translation-element-mark="1">
+                                  <font
+                                    class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                    data-immersive-translate-translation-element-mark="1">言论：</font>
+                                </font>
+                              </font>
+                            </b></p>
+                          <p data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">
+                            <font class="notranslate immersive-translate-target-wrapper"
+                              data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                              <font
+                                class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                data-immersive-translate-translation-element-mark="1">
+                                <font
+                                  class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                  data-immersive-translate-translation-element-mark="1">返回 NPC 对角色说的最后一个对话 ID。</font>
+                              </font>
+                            </font>
+                          </p><b data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">
+                            <font class="notranslate immersive-translate-target-wrapper"
+                              data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                              <font
+                                class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                data-immersive-translate-translation-element-mark="1">
+                                <font
+                                  class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                  data-immersive-translate-translation-element-mark="1">例：</font>
+                              </font>
+                            </font>
+                          </b>
+                          <p data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">
+                            <font class="notranslate immersive-translate-target-wrapper"
+                              data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                              <font
+                                class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                data-immersive-translate-translation-element-mark="1">
+                                <font
+                                  class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                  data-immersive-translate-translation-element-mark="1">以下代码示例说明了 Saga.GetLastDialogId
+                                  的用法：</font>
+                              </font>
+                            </font>
+                          </p>
+                          <font class="notranslate immersive-translate-target-wrapper"
+                            data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                            <font
+                              class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                              data-immersive-translate-translation-element-mark="1">
+                              <font
+                                class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                data-immersive-translate-translation-element-mark="1">无示例</font>
+                            </font>
+                          </font>
+                        </div>
+                        <h2 data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><a
+                            name="Saga.GetNPCIndex"
+                            data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">Saga.GetNPCIndex</a></h2>
+                        <div class="paragraph" data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                          data-immersive-translate-paragraph="1">
+                          <font class="notranslate immersive-translate-target-wrapper"
+                            data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                            <font
+                              class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                              data-immersive-translate-translation-element-mark="1">
+                              <font
+                                class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                data-immersive-translate-translation-element-mark="1">Saga.GetNPCIndex（cid）;</font>
+                            </font>
+                          </font>
+                          <p data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><b
+                              data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                              data-immersive-translate-paragraph="1">
+                              <font class="notranslate immersive-translate-target-wrapper"
+                                data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                                <font
+                                  class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                  data-immersive-translate-translation-element-mark="1">
+                                  <font
+                                    class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                    data-immersive-translate-translation-element-mark="1">言论：</font>
+                                </font>
+                              </font>
+                            </b></p>
+                          <p data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">
+                            <font class="notranslate immersive-translate-target-wrapper"
+                              data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                              <font
+                                class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                data-immersive-translate-translation-element-mark="1">
+                                <font
+                                  class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                  data-immersive-translate-translation-element-mark="1">返回当前 npc 的 npc 模型 ID。如果未选择
+                                  NPC，则返回 0。</font>
+                              </font>
+                            </font>
+                          </p><b data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">
+                            <font class="notranslate immersive-translate-target-wrapper"
+                              data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                              <font
+                                class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                data-immersive-translate-translation-element-mark="1">
+                                <font
+                                  class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                  data-immersive-translate-translation-element-mark="1">例：</font>
+                              </font>
+                            </font>
+                          </b>
+                          <p data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">
+                            <font class="notranslate immersive-translate-target-wrapper"
+                              data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                              <font
+                                class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                data-immersive-translate-translation-element-mark="1">
+                                <font
+                                  class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                  data-immersive-translate-translation-element-mark="1">以下代码示例演示了 Saga.GetNPCIndex
+                                  的使用方法：</font>
+                              </font>
+                            </font>
+                          </p><code data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><pre class="code">function QUEST_STEP_2(cid)
+-- Talk to mischa
+local NPCIndex = 1000;
+local ret = Saga.GetNPCIndex(cid);
+    
+Saga.AddWaypoint(cid, QuestID, NPCIndex, -12092, -6490, -8284, 1);
+if ret == NPCIndex then
+  Saga.StepComplete(cid, QuestID, 102);
+else
+  return  -1;
+end
+        
+Saga.ClearWaypoints(cid, QuestID);
+return 0;
+end
+    </pre></code>
+                        </div>
+                        <h2 data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><a
+                            name="Saga.GiveExp" data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">
+                            <font class="notranslate immersive-translate-target-wrapper"
+                              data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                              <font
+                                class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                data-immersive-translate-translation-element-mark="1">
+                                <font
+                                  class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                  data-immersive-translate-translation-element-mark="1">Saga.GiveExp 函数</font>
+                              </font>
+                            </font>
+                          </a></h2>
+                        <div class="paragraph" data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                          data-immersive-translate-paragraph="1"><code
+                            data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6">Saga.GiveExp(cid, RewCxp, RewJxp, RewWxp);</code>
+                          <p data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><b
+                              data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                              data-immersive-translate-paragraph="1">
+                              <font class="notranslate immersive-translate-target-wrapper"
+                                data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                                <font
+                                  class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                  data-immersive-translate-translation-element-mark="1">
+                                  <font
+                                    class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                    data-immersive-translate-translation-element-mark="1">言论：</font>
+                                </font>
+                              </font>
+                            </b></p>
+                          <p data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">
+                            <font class="notranslate immersive-translate-target-wrapper"
+                              data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                              <font
+                                class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                data-immersive-translate-translation-element-mark="1">
+                                <font
+                                  class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                  data-immersive-translate-translation-element-mark="1">给予一定的 Cexp、Jexp、Wexp 作为任务奖励的一部分。
+                                </font>
+                              </font>
+                            </font>
+                          </p><b data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">
+                            <font class="notranslate immersive-translate-target-wrapper"
+                              data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                              <font
+                                class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                data-immersive-translate-translation-element-mark="1">
+                                <font
+                                  class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                  data-immersive-translate-translation-element-mark="1">例：</font>
+                              </font>
+                            </font>
+                          </b>
+                          <p data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">
+                            <font class="notranslate immersive-translate-target-wrapper"
+                              data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                              <font
+                                class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                data-immersive-translate-translation-element-mark="1">
+                                <font
+                                  class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                  data-immersive-translate-translation-element-mark="1">下面的代码示例说明了 Saga.GiveExp 的用法：
+                                </font>
+                              </font>
+                            </font>
+                          </p><code data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><pre class="code">function QUEST_FINISH(cid)
+-- Gives all rewards
+Saga.GiveItem(cid, RewItem1, RewItemCount1 );
+Saga.GiveZeny(cid, RewZeny);
+Saga.GiveExp(cid, RewCxp, RewJxp, RewWxp);
+return 0;
+end</pre></code>
+                        </div>
+                        <h2 data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><a
+                            name="Saga.GiveItem" data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">Saga.GiveItem</a></h2>
+                        <div class="paragraph" data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                          data-immersive-translate-paragraph="1"><code
+                            data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6">Saga.GiveItem(cid, RewItem, RewItemCount)</code>
+                          <p data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><b
+                              data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                              data-immersive-translate-paragraph="1">
+                              <font class="notranslate immersive-translate-target-wrapper"
+                                data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                                <font
+                                  class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                  data-immersive-translate-translation-element-mark="1">
+                                  <font
+                                    class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                    data-immersive-translate-translation-element-mark="1">言论：</font>
+                                </font>
+                              </font>
+                            </b></p>
+                          <p data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">
+                            <font class="notranslate immersive-translate-target-wrapper"
+                              data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                              <font
+                                class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                data-immersive-translate-translation-element-mark="1">
+                                <font
+                                  class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                  data-immersive-translate-translation-element-mark="1">给予特定物品，并带有特定数量作为任务奖励的一部分。</font>
+                              </font>
+                            </font>
+                          </p><b data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">
+                            <font class="notranslate immersive-translate-target-wrapper"
+                              data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                              <font
+                                class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                data-immersive-translate-translation-element-mark="1">
+                                <font
+                                  class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                  data-immersive-translate-translation-element-mark="1">例：</font>
+                              </font>
+                            </font>
+                          </b>
+                          <p data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">
+                            <font class="notranslate immersive-translate-target-wrapper"
+                              data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                              <font
+                                class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                data-immersive-translate-translation-element-mark="1">
+                                <font
+                                  class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                  data-immersive-translate-translation-element-mark="1">下面的代码示例说明了 Saga.GiveItem 的用法：
+                                </font>
+                              </font>
+                            </font>
+                          </p><code data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><pre class="code">function QUEST_FINISH(cid)
+-- Gives all rewards
+Saga.GiveItem(cid, RewItem1, RewItemCount1 );
+Saga.GiveZeny(cid, RewZeny);
+Saga.GiveExp(cid, RewCxp, RewJxp, RewWxp);
+return 0;
+end
+    </pre></code>
+                        </div>
+                        <h2 data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><a
+                            name="Saga.GiveZeny" data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">
+                            <font class="notranslate immersive-translate-target-wrapper"
+                              data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                              <font
+                                class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                data-immersive-translate-translation-element-mark="1">
+                                <font
+                                  class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                  data-immersive-translate-translation-element-mark="1">Saga.GiveZeny 公司</font>
+                              </font>
+                            </font>
+                          </a></h2>
+                        <div class="paragraph" data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                          data-immersive-translate-paragraph="1">
+                          <font class="notranslate immersive-translate-target-wrapper"
+                            data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                            <font
+                              class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                              data-immersive-translate-translation-element-mark="1">
+                              <font
+                                class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                data-immersive-translate-translation-element-mark="1">Saga.GiveZeny（cid， Zeny）;</font>
+                            </font>
+                          </font>
+                          <p data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><b
+                              data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                              data-immersive-translate-paragraph="1">
+                              <font class="notranslate immersive-translate-target-wrapper"
+                                data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                                <font
+                                  class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                  data-immersive-translate-translation-element-mark="1">
+                                  <font
+                                    class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                    data-immersive-translate-translation-element-mark="1">言论：</font>
+                                </font>
+                              </font>
+                            </b></p>
+                          <p data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">
+                            <font class="notranslate immersive-translate-target-wrapper"
+                              data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                              <font
+                                class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                data-immersive-translate-translation-element-mark="1">
+                                <font
+                                  class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                  data-immersive-translate-translation-element-mark="1">给予一定量的 zeny。</font>
+                              </font>
+                            </font>
+                          </p><b data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">
+                            <font class="notranslate immersive-translate-target-wrapper"
+                              data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                              <font
+                                class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                data-immersive-translate-translation-element-mark="1">
+                                <font
+                                  class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                  data-immersive-translate-translation-element-mark="1">例：</font>
+                              </font>
+                            </font>
+                          </b>
+                          <p data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">
+                            <font class="notranslate immersive-translate-target-wrapper"
+                              data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                              <font
+                                class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                data-immersive-translate-translation-element-mark="1">
+                                <font
+                                  class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                  data-immersive-translate-translation-element-mark="1">下面的代码示例说明了 Saga.GiveZeny 的用法：
+                                </font>
+                              </font>
+                            </font>
+                          </p><code data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><pre class="code">function QUEST_FINISH(cid)
+  -- Gives all rewards
+  Saga.GiveItem(cid, RewItem1, RewItemCount1 );
+  Saga.GiveZeny(cid, RewZeny);
+  Saga.GiveExp(cid, RewCxp, RewJxp, RewWxp);
+  return 0;
+end
+  </pre></code>
+                        </div>
+                        <h2 data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><a
+                            name="Saga.InsertQuest"
+                            data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">Saga.InsertQuest</a></h2>
+                        <div class="paragraph" data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                          data-immersive-translate-paragraph="1"><code
+                            data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6">Saga.InsertQuest(cid, QuestId, SlotId);</code>
+                          <p data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><b
+                              data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                              data-immersive-translate-paragraph="1">
+                              <font class="notranslate immersive-translate-target-wrapper"
+                                data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                                <font
+                                  class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                  data-immersive-translate-translation-element-mark="1">
+                                  <font
+                                    class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                    data-immersive-translate-translation-element-mark="1">言论：</font>
+                                </font>
+                              </font>
+                            </b></p>
+                          <p data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">
+                            <font class="notranslate immersive-translate-target-wrapper"
+                              data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                              <font
+                                class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                data-immersive-translate-translation-element-mark="1">
+                                <font
+                                  class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                  data-immersive-translate-translation-element-mark="1">
+                                  将任务插入到任务列表中。在调用此函数之前，任务状态将被编辑，而不会通知相关角色。将 SlotId 1 用于官方任务，将 SlotId 2 用于个人任务。</font>
+                              </font>
+                            </font>
+                          </p><b data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">
+                            <font class="notranslate immersive-translate-target-wrapper"
+                              data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                              <font
+                                class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                data-immersive-translate-translation-element-mark="1">
+                                <font
+                                  class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                  data-immersive-translate-translation-element-mark="1">例：</font>
+                              </font>
+                            </font>
+                          </b>
+                          <p data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">
+                            <font class="notranslate immersive-translate-target-wrapper"
+                              data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                              <font
+                                class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                data-immersive-translate-translation-element-mark="1">
+                                <font
+                                  class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                  data-immersive-translate-translation-element-mark="1">以下代码示例说明了 Saga.InsertQuest 的用法：
+                                </font>
+                              </font>
+                            </font>
+                          </p><code data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><pre class="code">function QUEST_START(cid)
+-- Initialize all quest steps
+-- Initialize all starting navigation points
+    
+Saga.AddStep(cid, QuestID, 101);
+Saga.AddStep(cid, QuestID, 102);
+Saga.AddStep(cid, QuestID, 103);
+Saga.InsertQuest(cid, QuestID, 1);
+    
+return 0;
+end </pre></code>
+                        </div>
+                        <h2 data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><a
+                            name="Saga.IsSubStepComplete"
+                            data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">Saga.IsSubStepComplete</a></h2>
+                        <div class="paragraph" data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                          data-immersive-translate-paragraph="1"><code
+                            data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6">Saga.IsSubStepComplete(uid,  QuestID, StepID, SubStepID );	</code>
+                          <p data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><b
+                              data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                              data-immersive-translate-paragraph="1">
+                              <font class="notranslate immersive-translate-target-wrapper"
+                                data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                                <font
+                                  class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                  data-immersive-translate-translation-element-mark="1">
+                                  <font
+                                    class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                    data-immersive-translate-translation-element-mark="1">言论：</font>
+                                </font>
+                              </font>
+                            </b></p>
+                          <p data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">
+                            <font class="notranslate immersive-translate-target-wrapper"
+                              data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                              <font
+                                class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                data-immersive-translate-translation-element-mark="1">
+                                <font
+                                  class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                  data-immersive-translate-translation-element-mark="1">如果子步骤已完成，则返回 true;false 表示
+                                  SubStep 未完成或未找到 SubStep。</font>
+                              </font>
+                            </font>
+                          </p><b data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">
+                            <font class="notranslate immersive-translate-target-wrapper"
+                              data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                              <font
+                                class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                data-immersive-translate-translation-element-mark="1">
+                                <font
+                                  class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                  data-immersive-translate-translation-element-mark="1">例：</font>
+                              </font>
+                            </font>
+                          </b>
+                          <p data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">
+                            <font class="notranslate immersive-translate-target-wrapper"
+                              data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                              <font
+                                class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                data-immersive-translate-translation-element-mark="1">
+                                <font
+                                  class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                  data-immersive-translate-translation-element-mark="1">下面的代码示例说明了
+                                  Saga.IsSubStepComplete 的用法：</font>
+                              </font>
+                            </font>
+                          </p><code data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><pre class="code">function QUEST_STEP_2(cid)	
+-- Add all waypoints
+Saga.AddWaypoint(cid, QuestID, 1202, 1, 1003);
+Saga.AddWaypoint(cid, QuestID, 1202, 2, 1000);
+Saga.AddWaypoint(cid, QuestID, 1202, 3, 1005);
+Saga.AddWaypoint(cid, QuestID, 1202, 4, 1002);
+Saga.AddWaypoint(cid, QuestID, 1202, 5, 1001);
+
+-- Check for completion
+local ret = Saga.GetNPCIndex(cid);    
+  if ret == 1003 then
+  Saga.GeneralDialog(cid, 3936);
+  Saga.SubstepComplete(cid, QuestID, 1202, 1);
+  Saga.NpcTakeItem(cid, 2661, 1);
+  elseif ret == 1000 then
+  Saga.GeneralDialog(cid, 3936);
+  Saga.SubstepComplete(cid, QuestID, 1202, 2);
+  Saga.NpcTakeItem(cid, 2661, 1);
+  elseif ret == 1005 then
+  Saga.GeneralDialog(cid, 3936);
+  Saga.SubstepComplete(cid, QuestID, 1202, 3);
+  Saga.NpcTakeItem(cid, 2661, 1);
+  elseif ret == 1002 then
+  Saga.GeneralDialog(cid, 3936);
+  Saga.SubstepComplete(cid, QuestID, 1202, 4);
+  Saga.NpcTakeItem(cid, 2661, 1);
+  elseif ret == 1001 then
+  Saga.GeneralDialog(cid, 3936);
+  Saga.SubstepComplete(cid, QuestID, 1202, 5);	
+  Saga.NpcTakeItem(cid, 2661, 1);
+else
+  return -1;
+  end	
+      
+  -- Check if all substeps are completed
+  for i = 1, 5 do
+       if Saga.IsSubStepCompleted(cid,QuestID,1202, i) == false then
+    return -1;
+   end
+  end     
+
+Saga.StepComplete(cid, QuestID, 1202);    
+  Saga.QuestComplete(cid, QuestID);             	
+  return -1; 
+end
+    </pre></code>
+                        </div>
+                        <h2 data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><a
+                            name="Saga.NpcGiveItem"
+                            data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">Saga.NpcGiveItem</a></h2>
+                        <div class="paragraph" data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                          data-immersive-translate-paragraph="1"><code
+                            data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6">Saga.NpcGiveItem(uid, ItemId, Amount);	</code>
+                          <p data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><b
+                              data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                              data-immersive-translate-paragraph="1">
+                              <font class="notranslate immersive-translate-target-wrapper"
+                                data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                                <font
+                                  class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                  data-immersive-translate-translation-element-mark="1">
+                                  <font
+                                    class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                    data-immersive-translate-translation-element-mark="1">言论：</font>
+                                </font>
+                              </font>
+                            </b></p>
+                          <p data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">
+                            <font class="notranslate immersive-translate-target-wrapper"
+                              data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                              <font
+                                class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                data-immersive-translate-translation-element-mark="1">
+                                <font
+                                  class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                  data-immersive-translate-translation-element-mark="1">给出指定数量的物品，并附有由 NPC 给出的描述</font>
+                              </font>
+                            </font>
+                          </p><b data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">
+                            <font class="notranslate immersive-translate-target-wrapper"
+                              data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                              <font
+                                class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                data-immersive-translate-translation-element-mark="1">
+                                <font
+                                  class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                  data-immersive-translate-translation-element-mark="1">例：</font>
+                              </font>
+                            </font>
+                          </b>
+                          <p data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">
+                            <font class="notranslate immersive-translate-target-wrapper"
+                              data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                              <font
+                                class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                data-immersive-translate-translation-element-mark="1">
+                                <font
+                                  class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                  data-immersive-translate-translation-element-mark="1">下面的代码示例说明了 Saga.NpcGiveItem 的用法：
+                                </font>
+                              </font>
+                            </font>
+                          </p><code data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><pre class="code">        function QUEST_STEP_1(cid)
+-- Talk to Sally
+   local NPCIndex = 1147;
+   local ItemId = 4071;
+   local ret = Saga.GetNPCIndex(cid);    
+   local freeslots = Saga.FreeInventoryCount(cid, 0);
+
+   if ret == NPCIndex then
+   Saga.GeneralDialog(cid, 3933);
+
+   if freeslots &gt; 0 then
+      Saga.StepComplete(cid, QuestID, 39901);
+  Saga.NpcGiveItem(cid, ItemId, 1);
+   else
+  return -1;
+   end
+   else
+       return  -1;
+   end
+
+   Saga.ClearWaypoints(cid, QuestID);
+   Saga.AddWaypoint(cid, QuestID, 1148);
+   return 0; 
+end
+    </pre></code>
+                        </div>
+                        <h2 data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><a
+                            name="Saga.NpcTakeItem"
+                            data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">Saga.NpcTakeItem</a></h2>
+                        <div class="paragraph" data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                          data-immersive-translate-paragraph="1"><code
+                            data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6">Saga.NpcTakeItem(uid, ItemId, Amount);</code>
+                          <p data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><b
+                              data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                              data-immersive-translate-paragraph="1">
+                              <font class="notranslate immersive-translate-target-wrapper"
+                                data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                                <font
+                                  class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                  data-immersive-translate-translation-element-mark="1">
+                                  <font
+                                    class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                    data-immersive-translate-translation-element-mark="1">言论：</font>
+                                </font>
+                              </font>
+                            </b></p>
+                          <p data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">
+                            <font class="notranslate immersive-translate-target-wrapper"
+                              data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                              <font
+                                class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                data-immersive-translate-translation-element-mark="1">
+                                <font
+                                  class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                  data-immersive-translate-translation-element-mark="1">获取指定数量的物品，并带有 NPC 拿走的描述</font>
+                              </font>
+                            </font>
+                          </p><b data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">
+                            <font class="notranslate immersive-translate-target-wrapper"
+                              data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                              <font
+                                class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                data-immersive-translate-translation-element-mark="1">
+                                <font
+                                  class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                  data-immersive-translate-translation-element-mark="1">例：</font>
+                              </font>
+                            </font>
+                          </b>
+                          <p data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">
+                            <font class="notranslate immersive-translate-target-wrapper"
+                              data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                              <font
+                                class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                data-immersive-translate-translation-element-mark="1">
+                                <font
+                                  class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                  data-immersive-translate-translation-element-mark="1">以下代码示例演示了 Saga.NpcTakeItem 的用法：
+                                </font>
+                              </font>
+                            </font>
+                          </p><code data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><pre class="code">function QUEST_STEP_3(cid)
+-- Deliver Unripe Pukui to Sally
+   local NPCIndex = 1147;
+   local ItemId = 2666;
+   local ret = Saga.GetNPCIndex(cid);    
+   local ItemCount = Saga.CheckUserInventory(cid, ItemId );
+
+   if ret == NPCIndex then
+   Saga.GeneralDialog(cid, 3936);
+   if ItemCount &gt; 0 then
+       Saga.NpcTakeItem(cid, ItemId, 1 );
+       Saga.StepComplete(cid, QuestID, 39803);
+   else
+       return  -1;		  
+   end
+   else
+       return  -1;
+   end
+
+   Saga.ClearWaypoints(cid, QuestID);	
+   Saga.QuestComplete(cid, QuestID);		
+   return 0; 
+end
+    </pre></code>
+                        </div>
+                        <h2 data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><a
+                            name="Saga.QuestComplete"
+                            data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">Saga.QuestComplete</a></h2>
+                        <div class="paragraph" data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                          data-immersive-translate-paragraph="1"><code
+                            data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6">Saga.QuestComplete(cid, QuestID);</code>
+                          <p data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><b
+                              data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                              data-immersive-translate-paragraph="1">
+                              <font class="notranslate immersive-translate-target-wrapper"
+                                data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                                <font
+                                  class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                  data-immersive-translate-translation-element-mark="1">
+                                  <font
+                                    class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                    data-immersive-translate-translation-element-mark="1">言论：</font>
+                                </font>
+                              </font>
+                            </b></p>
+                          <p data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">
+                            <font class="notranslate immersive-translate-target-wrapper"
+                              data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                              <font
+                                class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                data-immersive-translate-translation-element-mark="1">
+                                <font
+                                  class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                  data-immersive-translate-translation-element-mark="1">完成一个任务。（显示 finish 按钮）。</font>
+                              </font>
+                            </font>
+                          </p><b data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">
+                            <font class="notranslate immersive-translate-target-wrapper"
+                              data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                              <font
+                                class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                data-immersive-translate-translation-element-mark="1">
+                                <font
+                                  class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                  data-immersive-translate-translation-element-mark="1">例：</font>
+                              </font>
+                            </font>
+                          </b>
+                          <p data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">
+                            <font class="notranslate immersive-translate-target-wrapper"
+                              data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                              <font
+                                class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                data-immersive-translate-translation-element-mark="1">
+                                <font
+                                  class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                  data-immersive-translate-translation-element-mark="1">以下代码示例说明了 Saga.QuestComplete
+                                  的用法：</font>
+                              </font>
+                            </font>
+                          </p><code data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><pre class="code">function QUEST_STEP_3(cid)
+-- Complete quest
+Saga.QuestComplete(cid, QuestID);	
+return 0; 
+end
+    </pre></code>
+                        </div>
+                        <h2 data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><a
+                            name="Saga.StepComplete"
+                            data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">Saga.StepComplete</a></h2>
+                        <div class="paragraph" data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                          data-immersive-translate-paragraph="1"><code
+                            data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6">Saga.StepComplete(cid, QuestID, StepId);</code>
+                          <p data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><b
+                              data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                              data-immersive-translate-paragraph="1">
+                              <font class="notranslate immersive-translate-target-wrapper"
+                                data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                                <font
+                                  class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                  data-immersive-translate-translation-element-mark="1">
+                                  <font
+                                    class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                    data-immersive-translate-translation-element-mark="1">言论：</font>
+                                </font>
+                              </font>
+                            </b></p>
+                          <p data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">
+                            <font class="notranslate immersive-translate-target-wrapper"
+                              data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                              <font
+                                class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                data-immersive-translate-translation-element-mark="1">
+                                <font
+                                  class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                  data-immersive-translate-translation-element-mark="1">完成指定步骤。</font>
+                              </font>
+                            </font>
+                          </p><b data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">
+                            <font class="notranslate immersive-translate-target-wrapper"
+                              data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                              <font
+                                class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                data-immersive-translate-translation-element-mark="1">
+                                <font
+                                  class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                  data-immersive-translate-translation-element-mark="1">例：</font>
+                              </font>
+                            </font>
+                          </b>
+                          <p data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">
+                            <font class="notranslate immersive-translate-target-wrapper"
+                              data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                              <font
+                                class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                data-immersive-translate-translation-element-mark="1">
+                                <font
+                                  class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                  data-immersive-translate-translation-element-mark="1">下面的代码示例说明了 Saga.StepComplete
+                                  的用法：</font>
+                              </font>
+                            </font>
+                          </p><code data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><pre class="code">function QUEST_STEP_1(cid)
+-- Talk to mischa              
+Saga.AddWaypoint(cid, QuestID, 301, 1, 1000);      
+
+-- Check for completion
+local ret = Saga.GetNPCIndex(cid);    
+if ret == 1000 then
+  Saga.GeneralDialog(cid, 3936);			
+  Saga.SubstepComplete(cid, QuestID, 301, 1);
+end	
+
+  -- Check if all substeps are completed
+  for i = 1, 1 do
+       if Saga.IsSubStepCompleted(cid,QuestID,301, i) == false then
+    return -1;
+   end
+  end	
+  
+  Saga.StepComplete(cid, QuestID, 301);
+  Saga.ClearWaypoints(cid, QuestID);    
+return 0;
+end</pre></code>
+                        </div>
+                        <h2 data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><a
+                            name="Saga.SubStepComplete"
+                            data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">Saga.SubStepComplete</a></h2>
+                        <div class="paragraph" data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                          data-immersive-translate-paragraph="1"><code
+                            data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6">Saga.SubStepComplete(uid,  QuestID, StepID, SubStepID );	</code>
+                          <p data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><b
+                              data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                              data-immersive-translate-paragraph="1">
+                              <font class="notranslate immersive-translate-target-wrapper"
+                                data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                                <font
+                                  class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                  data-immersive-translate-translation-element-mark="1">
+                                  <font
+                                    class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                    data-immersive-translate-translation-element-mark="1">言论：</font>
+                                </font>
+                              </font>
+                            </b></p>
+                          <p data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">
+                            <font class="notranslate immersive-translate-target-wrapper"
+                              data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                              <font
+                                class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                data-immersive-translate-translation-element-mark="1">
+                                <font
+                                  class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                  data-immersive-translate-translation-element-mark="1">将子步骤标记为完成。这会将当前值重置为子步骤的最大值。
+                                </font>
+                              </font>
+                            </font>
+                          </p><b data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">
+                            <font class="notranslate immersive-translate-target-wrapper"
+                              data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                              <font
+                                class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                data-immersive-translate-translation-element-mark="1">
+                                <font
+                                  class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                  data-immersive-translate-translation-element-mark="1">例：</font>
+                              </font>
+                            </font>
+                          </b>
+                          <p data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">
+                            <font class="notranslate immersive-translate-target-wrapper"
+                              data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                              <font
+                                class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                data-immersive-translate-translation-element-mark="1">
+                                <font
+                                  class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                  data-immersive-translate-translation-element-mark="1">下面的代码示例说明了 Saga.SubStepComplete
+                                  的用法：</font>
+                              </font>
+                            </font>
+                          </p><code data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><pre class="code">function QUEST_STEP_2(cid)	
+-- Add all waypoints
+Saga.AddWaypoint(cid, QuestID, 1202, 1, 1003);
+Saga.AddWaypoint(cid, QuestID, 1202, 2, 1000);
+Saga.AddWaypoint(cid, QuestID, 1202, 3, 1005);
+Saga.AddWaypoint(cid, QuestID, 1202, 4, 1002);
+Saga.AddWaypoint(cid, QuestID, 1202, 5, 1001);
+
+-- Check for completion
+local ret = Saga.GetNPCIndex(cid);    
+  if ret == 1003 then
+  Saga.GeneralDialog(cid, 3936);
+  Saga.SubstepComplete(cid, QuestID, 1202, 1);
+  Saga.NpcTakeItem(cid, 2661, 1);
+  elseif ret == 1000 then
+  Saga.GeneralDialog(cid, 3936);
+  Saga.SubstepComplete(cid, QuestID, 1202, 2);
+  Saga.NpcTakeItem(cid, 2661, 1);
+  elseif ret == 1005 then
+  Saga.GeneralDialog(cid, 3936);
+  Saga.SubstepComplete(cid, QuestID, 1202, 3);
+  Saga.NpcTakeItem(cid, 2661, 1);
+  elseif ret == 1002 then
+  Saga.GeneralDialog(cid, 3936);
+  Saga.SubstepComplete(cid, QuestID, 1202, 4);
+  Saga.NpcTakeItem(cid, 2661, 1);
+  elseif ret == 1001 then
+  Saga.GeneralDialog(cid, 3936);
+  Saga.SubstepComplete(cid, QuestID, 1202, 5);	
+  Saga.NpcTakeItem(cid, 2661, 1);
+else
+  return -1;
+  end	
+      
+  -- Check if all substeps are completed
+  for i = 1, 5 do
+       if Saga.IsSubStepCompleted(cid,QuestID,1202, i) == false then
+    return -1;
+   end
+  end     
+
+Saga.StepComplete(cid, QuestID, 1202);    
+  Saga.QuestComplete(cid, QuestID);             	
+  return -1; 
+end
+    </pre></code>
+                        </div>
+                        <h2 data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><a
+                            name="Saga.UserUpdateActionObjectType"
+                            data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">Saga.UserUpdateActionObjectType</a></h2>
+                        <div class="paragraph" data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                          data-immersive-translate-paragraph="1"><code
+                            data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6">Saga.UserUpdateActionObjectType(cid, QuestID, StepId, ActionObjectID, Active );	</code>
+                          <p data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><b
+                              data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                              data-immersive-translate-paragraph="1">
+                              <font class="notranslate immersive-translate-target-wrapper"
+                                data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                                <font
+                                  class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                  data-immersive-translate-translation-element-mark="1">
+                                  <font
+                                    class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                    data-immersive-translate-translation-element-mark="1">言论：</font>
+                                </font>
+                              </font>
+                            </b></p>
+                          <p data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">
+                            <font class="notranslate immersive-translate-target-wrapper"
+                              data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                              <font
+                                class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                data-immersive-translate-translation-element-mark="1">
+                                <font
+                                  class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                  data-immersive-translate-translation-element-mark="1">激活或停用指定的操作对象。0 = 非活动 ， 1 = 活动
+                                </font>
+                              </font>
+                            </font>
+                          </p><b data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">
+                            <font class="notranslate immersive-translate-target-wrapper"
+                              data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                              <font
+                                class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                data-immersive-translate-translation-element-mark="1">
+                                <font
+                                  class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                  data-immersive-translate-translation-element-mark="1">例：</font>
+                              </font>
+                            </font>
+                          </b>
+                          <p data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                            data-immersive-translate-paragraph="1">
+                            <font class="notranslate immersive-translate-target-wrapper"
+                              data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                              <font
+                                class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                                data-immersive-translate-translation-element-mark="1">
+                                <font
+                                  class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                  data-immersive-translate-translation-element-mark="1">下面的代码示例说明了
+                                  Saga.UserUpdateActionObjectType 的用法：</font>
+                              </font>
+                            </font>
+                          </p><code data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><pre class="code">function QUEST_STEP_2(cid)
+-- Find training result
+    local ActionObjectID = 47;
+local ItemId = 9944;
+
+Saga.UserUpdateActionObjectType(cid, QuestID, 39602, ActionObjectID, 0 );		
+    if Saga.FindQuestItem(cid, QuestID, 39602, ActionObjectID, ItemId, 10000, 1, 1) &gt; 0 then
+    Saga.UserUpdateActionObjectType(cid, QuestID, 39602, ActionObjectID, 1 );	
+  Saga.StepComplete(cid, QuestID, 39602);
+else
+      return -1;
+   end
+
+   Saga.AddWaypoint(cid, QuestID, 1173);
+   return 0; 
+end
+    </pre></code>
+                        </div>
+                      </div>
+                      <div style="height:70px; width:100%;"
+                        data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"><a href="#"
+                          class="footerlink" data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6"
+                          data-immersive-translate-paragraph="1">
+                          <font class="notranslate immersive-translate-target-wrapper"
+                            data-immersive-translate-translation-element-mark="1" lang="zh-CN"><br>
+                            <font
+                              class="notranslate immersive-translate-target-translation-theme-none immersive-translate-target-translation-block-wrapper-theme-none immersive-translate-target-translation-block-wrapper"
+                              data-immersive-translate-translation-element-mark="1">
+                              <font
+                                class="notranslate immersive-translate-target-inner immersive-translate-target-translation-theme-none-inner"
+                                data-immersive-translate-translation-element-mark="1">返回页首</font>
+                            </font>
+                          </font>
+                        </a></div>
+                    </td>
+                    <td class="container_right" data-immersive-translate-walked="4635fd9f-8887-4ad4-b944-3f962de08de6">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="container_corner_lower_left"></td>
+                    <td class="container_bottom"></td>
+                    <td class="container_corner_lower_right"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="page_footer"><img src="images/logo-rev-low.png"></td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+
+</html>
